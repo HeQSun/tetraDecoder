@@ -5,4 +5,10 @@ Here we introduce the pipeline for phasing tetraploid genomes, i.e., using long 
 Pipeline of assembly
 =
 
-Please check folder [pipeline](https://github.com/HeQSun/tetraDecoder/tree/main/pipeline)
+Befrore running the pipeline, install necessary customized tools.
+
+for si in src*/; do cd $si; make ; cd .. ; done
+
+Then, check folder [pipeline](https://github.com/HeQSun/tetraDecoder/tree/main/pipeline)
+
+In the pipeline, there are tools like hifiasm, bowtie2 etc required, which are all publicly available. Please also install following their specific instructions.
