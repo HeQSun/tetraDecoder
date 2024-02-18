@@ -95,4 +95,4 @@ done
 # Conclusion 20220614: using C where shallow and deep sequencings are available and 75% uniquely aligned when shallow, >40% when deep: it is risky to deep sequence sample D, so we create a new lib for D.
 # Rerun for a new omnic lib of D - 20220725:
 
-# /srv/netscratch/dep_mercier/grp_schneeberger/bin/java/jre1.8.0_181/bin/java -Xmx5000m -jar /netscratch/dep_mercier/grp_schneeberger/bin/Juicebox/juicebox_2.13.07.jar
+# /path/to/java/jre1.8.0_181/bin/java -Xmx5000m -jar /netscratch/dep_mercier/grp_schneeberger/bin/Juicebox/juicebox_2.13.07.jar
