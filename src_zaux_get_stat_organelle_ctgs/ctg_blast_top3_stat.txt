@@ -1,0 +1,6 @@
+   Report: top 3 hits of contig utg010854l_pilon of size 21162 bp includes 
+           utg010854l_pilon	21162	MN104801.1 Solanum tuberosum cultivar Desiree chromosome 1 mitochondrion, 	21166	21082
+           utg010854l_pilon	21162	MF989961.1 Solanum commersonii strain Lz3.2 chromosome 2 mitochondrion, 	21166	21082
+           utg010854l_pilon	21162	MF989960.1 Solanum commersonii strain Lz3.2 chromosome 1 mitochondrion, 	21166	21082
+   Note: contig-id size-bp subject coverage-bp identity-bp; tab-separated. 
+

@@ -1,0 +1,234 @@
+/* Here are the merged subclusters of contigs */
+graph	Graph_1 {
+	subgraph cluster_0 {
+	/* merged with subclusters: 6, 8 */
+	utg000039l_pilon -- utg000890l_pilon [color=gold, fontcolor=gold, penwidth=1, label=5.77089]; /* cluster 0 */
+	utg000042l_pilon -- utg002063l_pilon [color=gold, fontcolor=gold, penwidth=1, label=80.8]; /* cluster 0 */
+	utg000079l_pilon -- utg000201l_pilon [color=gold, fontcolor=gold, penwidth=1, label=13.2881]; /* cluster 0 */
+	utg000169l_pilon -- utg000046l_pilon [color=gold, fontcolor=gold, penwidth=1, label=25.5851]; /* cluster 0 */
+	utg000176l_pilon -- utg000340l_pilon [color=gold, fontcolor=gold, penwidth=1, label=113]; /* cluster 0 */
+	utg000201l_pilon -- utg000176l_pilon [color=gold, fontcolor=gold, penwidth=1, label=260.3]; /* cluster 0 */
+	utg000340l_pilon -- utg000046l_pilon [color=gold, fontcolor=gold, penwidth=1, label=46.8]; /* cluster 0 */
+	utg000340l_pilon -- utg000201l_pilon [color=gold, fontcolor=gold, penwidth=1, label=450.4]; /* cluster 0 */
+	utg000382l_pilon -- utg002063l_pilon [color=gold, fontcolor=gold, penwidth=1, label=4.28913]; /* cluster 0 */
+	utg000890l_pilon -- utg000176l_pilon [color=gold, fontcolor=gold, penwidth=1, label=30.5]; /* cluster 0 */
+	utg000890l_pilon -- utg002441l_pilon [color=gold, fontcolor=gold, penwidth=1, label=321.2]; /* cluster 0 */
+	utg001105l_pilon -- utg000042l_pilon [color=gold, fontcolor=gold, penwidth=1, label=100.5]; /* cluster 0 */
+	utg001105l_pilon -- utg000046l_pilon [color=gold, fontcolor=gold, penwidth=1, label=158.6]; /* cluster 0 */
+	utg001377l_pilon -- utg000032l_pilon [color=gold, fontcolor=gold, penwidth=1, label=76.7838]; /* cluster 0 */
+	utg002063l_pilon -- utg001377l_pilon [color=gold, fontcolor=gold, penwidth=1, label=258.343]; /* cluster 0 */
+	utg000032l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000039l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg000042l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000046l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000079l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000169l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000176l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000201l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000340l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000382l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 3 */
+	utg000890l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg001105l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001377l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg002063l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg002441l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	label="G_1";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 15 contigs with total size of 38392115 bp */
+	}
+	subgraph cluster_1 {
+	/* merged with subclusters: 9 */
+	utg000055l_pilon -- utg000343l_pilon [color=gold, fontcolor=gold, penwidth=1, label=487.1]; /* cluster 1 */
+	utg000055l_pilon -- utg000378l_pilon [color=gold, fontcolor=gold, penwidth=1, label=420.3]; /* cluster 1 */
+	utg000055l_pilon -- utg001008l_pilon [color=gold, fontcolor=gold, penwidth=1, label=30.6]; /* cluster 1 */
+	utg000148l_pilon -- utg001308l_pilon [color=gold, fontcolor=gold, penwidth=1, label=574]; /* cluster 1 */
+	utg000245l_pilon -- utg000055l_pilon [color=gold, fontcolor=gold, penwidth=1, label=89.9]; /* cluster 1 */
+	utg000245l_pilon -- utg000345l_pilon [color=gold, fontcolor=gold, penwidth=1, label=362.4]; /* cluster 1 */
+	utg000245l_pilon -- utg000676l_pilon [color=gold, fontcolor=gold, penwidth=1, label=108.1]; /* cluster 1 */
+	utg000245l_pilon -- utg001220l_pilon [color=gold, fontcolor=gold, penwidth=1, label=146.4]; /* cluster 1 */
+	utg000281l_pilon -- utg001008l_pilon [color=gold, fontcolor=gold, penwidth=1, label=7.79715]; /* cluster 1 */
+	utg000343l_pilon -- utg000554l_pilon [color=gold, fontcolor=gold, penwidth=1, label=71.4]; /* cluster 1 */
+	utg000345l_pilon -- utg000378l_pilon [color=gold, fontcolor=gold, penwidth=1, label=104.2]; /* cluster 1 */
+	utg000345l_pilon -- utg000554l_pilon [color=gold, fontcolor=gold, penwidth=1, label=81.3]; /* cluster 1 */
+	utg000345l_pilon -- utg000560l_pilon [color=gold, fontcolor=gold, penwidth=1, label=139.2]; /* cluster 1 */
+	utg000345l_pilon -- utg000676l_pilon [color=gold, fontcolor=gold, penwidth=1, label=72.1]; /* cluster 1 */
+	utg000378l_pilon -- utg000245l_pilon [color=gold, fontcolor=gold, penwidth=1, label=118.9]; /* cluster 1 */
+	utg000378l_pilon -- utg000343l_pilon [color=gold, fontcolor=gold, penwidth=1, label=70.4]; /* cluster 1 */
+	utg000378l_pilon -- utg001220l_pilon [color=gold, fontcolor=gold, penwidth=1, label=77.4]; /* cluster 1 */
+	utg000419l_pilon -- utg000148l_pilon [color=gold, fontcolor=gold, penwidth=1, label=5.70473]; /* cluster 1 */
+	utg000554l_pilon -- utg000055l_pilon [color=gold, fontcolor=gold, penwidth=1, label=108.4]; /* cluster 1 */
+	utg000554l_pilon -- utg000378l_pilon [color=gold, fontcolor=gold, penwidth=1, label=355]; /* cluster 1 */
+	utg000554l_pilon -- utg001220l_pilon [color=gold, fontcolor=gold, penwidth=1, label=87.9]; /* cluster 1 */
+	utg000560l_pilon -- utg000148l_pilon [color=gold, fontcolor=gold, penwidth=1, label=107.7]; /* cluster 1 */
+	utg000560l_pilon -- utg000245l_pilon [color=gold, fontcolor=gold, penwidth=1, label=147.3]; /* cluster 1 */
+	utg000560l_pilon -- utg000554l_pilon [color=gold, fontcolor=gold, penwidth=1, label=81.5]; /* cluster 1 */
+	utg000560l_pilon -- utg000676l_pilon [color=gold, fontcolor=gold, penwidth=1, label=225.3]; /* cluster 1 */
+	utg000560l_pilon -- utg001220l_pilon [color=gold, fontcolor=gold, penwidth=1, label=375.1]; /* cluster 1 */
+	utg000560l_pilon -- utg001308l_pilon [color=gold, fontcolor=gold, penwidth=1, label=174.4]; /* cluster 1 */
+	utg000676l_pilon -- utg000148l_pilon [color=gold, fontcolor=gold, penwidth=1, label=177.2]; /* cluster 1 */
+	utg001008l_pilon -- utg002835l_pilon [color=gold, fontcolor=gold, penwidth=1, label=71.9834]; /* cluster 1 */
+	utg001220l_pilon -- utg000345l_pilon [color=gold, fontcolor=gold, penwidth=1, label=255.2]; /* cluster 1 */
+	utg001220l_pilon -- utg000676l_pilon [color=gold, fontcolor=gold, penwidth=1, label=104.1]; /* cluster 1 */
+	utg001308l_pilon -- utg000345l_pilon [color=gold, fontcolor=gold, penwidth=1, label=77.5]; /* cluster 1 */
+	utg001308l_pilon -- utg000676l_pilon [color=gold, fontcolor=gold, penwidth=1, label=739.9]; /* cluster 1 */
+	utg001308l_pilon -- utg001220l_pilon [color=gold, fontcolor=gold, penwidth=1, label=117.8]; /* cluster 1 */
+	utg001514l_pilon -- utg000148l_pilon [color=gold, fontcolor=gold, penwidth=1, label=10.4416]; /* cluster 1 */
+	utg001795l_pilon -- utg000343l_pilon [color=gold, fontcolor=gold, penwidth=1, label=8.98622]; /* cluster 1 */
+	utg000055l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000148l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000245l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000281l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 3 */
+	utg000343l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000345l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000378l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000419l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg000554l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000560l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000676l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg001008l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 3 */
+	utg001220l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg001308l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg001514l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg001795l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 3 */
+	utg002835l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 3 */
+	label="G_2";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 17 contigs with total size of 41655557 bp */
+	}
+	subgraph cluster_2 {
+	/* merged with subclusters: 4, 11 */
+	utg000071l_pilon -- utg000733l_pilon [color=gold, fontcolor=gold, penwidth=1, label=71.1]; /* cluster 2 */
+	utg000071l_pilon -- utg000995l_pilon [color=gold, fontcolor=gold, penwidth=1, label=83.1]; /* cluster 2 */
+	utg000071l_pilon -- utg001390l_pilon [color=gold, fontcolor=gold, penwidth=1, label=75.5]; /* cluster 2 */
+	utg000071l_pilon -- utg001439l_pilon [color=gold, fontcolor=gold, penwidth=1, label=75.2465]; /* cluster 2 */
+	utg000071l_pilon -- utg002151l_pilon [color=gold, fontcolor=gold, penwidth=1, label=93.2]; /* cluster 2 */
+	utg000130l_pilon -- utg000688l_pilon [color=gold, fontcolor=gold, penwidth=1, label=105.7]; /* cluster 2 */
+	utg000130l_pilon -- utg000733l_pilon [color=gold, fontcolor=gold, penwidth=1, label=94.5]; /* cluster 2 */
+	utg000130l_pilon -- utg001539l_pilon [color=gold, fontcolor=gold, penwidth=1, label=231.4]; /* cluster 2 */
+	utg000189l_pilon -- utg000688l_pilon [color=gold, fontcolor=gold, penwidth=1, label=74.7]; /* cluster 2 */
+	utg000189l_pilon -- utg000702l_pilon [color=gold, fontcolor=gold, penwidth=1, label=84.3]; /* cluster 2 */
+	utg000189l_pilon -- utg001289l_pilon [color=gold, fontcolor=gold, penwidth=1, label=195.6]; /* cluster 2 */
+	utg000189l_pilon -- utg001356l_pilon [color=gold, fontcolor=gold, penwidth=1, label=12.9716]; /* cluster 2 */
+	utg000207l_pilon -- utg000130l_pilon [color=gold, fontcolor=gold, penwidth=1, label=497.4]; /* cluster 2 */
+	utg000207l_pilon -- utg000702l_pilon [color=gold, fontcolor=gold, penwidth=1, label=214.6]; /* cluster 2 */
+	utg000207l_pilon -- utg001289l_pilon [color=gold, fontcolor=gold, penwidth=1, label=101]; /* cluster 2 */
+	utg000210l_pilon -- utg002280l_pilon [color=gold, fontcolor=gold, penwidth=1, label=7.73544]; /* cluster 2 */
+	utg000256l_pilon -- utg000130l_pilon [color=gold, fontcolor=gold, penwidth=1, label=75.3]; /* cluster 2 */
+	utg000480l_pilon -- utg002280l_pilon [color=gold, fontcolor=gold, penwidth=1, label=5.14363]; /* cluster 2 */
+	utg000541l_pilon -- utg000733l_pilon [color=gold, fontcolor=gold, penwidth=1, label=9.49643]; /* cluster 2 */
+	utg000688l_pilon -- utg000207l_pilon [color=gold, fontcolor=gold, penwidth=1, label=316]; /* cluster 2 */
+	utg000702l_pilon -- utg000130l_pilon [color=gold, fontcolor=gold, penwidth=1, label=79.7]; /* cluster 2 */
+	utg000702l_pilon -- utg000688l_pilon [color=gold, fontcolor=gold, penwidth=1, label=274.5]; /* cluster 2 */
+	utg000702l_pilon -- utg001539l_pilon [color=gold, fontcolor=gold, penwidth=1, label=95.6]; /* cluster 2 */
+	utg000733l_pilon -- utg001089l_pilon [color=gold, fontcolor=gold, penwidth=1, label=84.6]; /* cluster 2 */
+	utg000733l_pilon -- utg001390l_pilon [color=gold, fontcolor=gold, penwidth=1, label=166.5]; /* cluster 2 */
+	utg000995l_pilon -- utg001089l_pilon [color=gold, fontcolor=gold, penwidth=1, label=95.5]; /* cluster 2 */
+	utg000995l_pilon -- utg001439l_pilon [color=gold, fontcolor=gold, penwidth=1, label=178.845]; /* cluster 2 */
+	utg000995l_pilon -- utg001607l_pilon [color=gold, fontcolor=gold, penwidth=1, label=270.2]; /* cluster 2 */
+	utg001089l_pilon -- utg000071l_pilon [color=gold, fontcolor=gold, penwidth=1, label=219.3]; /* cluster 2 */
+	utg001089l_pilon -- utg002151l_pilon [color=gold, fontcolor=gold, penwidth=1, label=191.8]; /* cluster 2 */
+	utg001390l_pilon -- utg001089l_pilon [color=gold, fontcolor=gold, penwidth=1, label=113.6]; /* cluster 2 */
+	utg001539l_pilon -- utg000207l_pilon [color=gold, fontcolor=gold, penwidth=1, label=133.3]; /* cluster 2 */
+	utg001539l_pilon -- utg000256l_pilon [color=gold, fontcolor=gold, penwidth=1, label=295]; /* cluster 2 */
+	utg001607l_pilon -- utg000071l_pilon [color=gold, fontcolor=gold, penwidth=1, label=74.6]; /* cluster 2 */
+	utg001607l_pilon -- utg000748l_pilon [color=gold, fontcolor=gold, penwidth=1, label=112.7]; /* cluster 2 */
+	utg001607l_pilon -- utg001439l_pilon [color=gold, fontcolor=gold, penwidth=1, label=81.4672]; /* cluster 2 */
+	utg001774l_pilon -- utg001356l_pilon [color=gold, fontcolor=gold, penwidth=1, label=73.2]; /* cluster 2 */
+	utg002105l_pilon -- utg001774l_pilon [color=gold, fontcolor=gold, penwidth=1, label=3.64889]; /* cluster 2 */
+	utg002151l_pilon -- utg000733l_pilon [color=gold, fontcolor=gold, penwidth=1, label=135]; /* cluster 2 */
+	utg002280l_pilon -- utg002151l_pilon [color=gold, fontcolor=gold, penwidth=1, label=8.70609]; /* cluster 2 */
+	utg002357l_pilon -- utg002105l_pilon [color=gold, fontcolor=gold, penwidth=1, label=6.20266]; /* cluster 2 */
+	utg000071l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000130l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000189l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000207l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000210l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 3 */
+	utg000256l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000480l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 3 */
+	utg000541l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000688l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000702l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000733l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000748l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000995l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001089l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001289l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg001356l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg001390l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001439l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001539l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001607l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001774l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg002105l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg002151l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg002280l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 3 */
+	utg002357l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	label="G_3";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 25 contigs with total size of 41988532 bp */
+	}
+	subgraph cluster_3 {
+	/* merged with subclusters: 7, 10, 5 */
+	utg000129l_pilon -- utg000442l_pilon [color=gold, fontcolor=gold, penwidth=1, label=90.3]; /* cluster 3 */
+	utg000172l_pilon -- utg000612l_pilon [color=gold, fontcolor=gold, penwidth=1, label=191.6]; /* cluster 3 */
+	utg000172l_pilon -- utg001335l_pilon [color=gold, fontcolor=gold, penwidth=1, label=172.4]; /* cluster 3 */
+	utg000193l_pilon -- utg000843l_pilon [color=gold, fontcolor=gold, penwidth=1, label=88.8]; /* cluster 3 */
+	utg000229l_pilon -- utg000442l_pilon [color=gold, fontcolor=gold, penwidth=1, label=70.7]; /* cluster 3 */
+	utg000269l_pilon -- utg000193l_pilon [color=gold, fontcolor=gold, penwidth=1, label=71.2]; /* cluster 3 */
+	utg000269l_pilon -- utg000229l_pilon [color=gold, fontcolor=gold, penwidth=1, label=26]; /* cluster 3 */
+	utg000269l_pilon -- utg000843l_pilon [color=gold, fontcolor=gold, penwidth=1, label=223.5]; /* cluster 3 */
+	utg000269l_pilon -- utg001228l_pilon [color=gold, fontcolor=gold, penwidth=1, label=101.4]; /* cluster 3 */
+	utg000303l_pilon -- utg000458l_pilon [color=gold, fontcolor=gold, penwidth=1, label=126.1]; /* cluster 3 */
+	utg000303l_pilon -- utg000843l_pilon [color=gold, fontcolor=gold, penwidth=1, label=100.8]; /* cluster 3 */
+	utg000303l_pilon -- utg001228l_pilon [color=gold, fontcolor=gold, penwidth=1, label=391.2]; /* cluster 3 */
+	utg000356l_pilon -- utg000442l_pilon [color=gold, fontcolor=gold, penwidth=1, label=129.7]; /* cluster 3 */
+	utg000442l_pilon -- utg002037l_pilon [color=gold, fontcolor=gold, penwidth=1, label=92.6]; /* cluster 3 */
+	utg000488l_pilon -- utg000129l_pilon [color=gold, fontcolor=gold, penwidth=1, label=5.18194]; /* cluster 3 */
+	utg000612l_pilon -- utg000193l_pilon [color=gold, fontcolor=gold, penwidth=1, label=59.0779]; /* cluster 3 */
+	utg000612l_pilon -- utg001688l_pilon [color=gold, fontcolor=gold, penwidth=1, label=48.5106]; /* cluster 3 */
+	utg000763l_pilon -- utg001228l_pilon [color=gold, fontcolor=gold, penwidth=1, label=3.77021]; /* cluster 3 */
+	utg000843l_pilon -- utg001319l_pilon [color=gold, fontcolor=gold, penwidth=1, label=316.3]; /* cluster 3 */
+	utg001228l_pilon -- utg000843l_pilon [color=gold, fontcolor=gold, penwidth=1, label=79.3]; /* cluster 3 */
+	utg001249l_pilon -- utg001688l_pilon [color=gold, fontcolor=gold, penwidth=1, label=71.68]; /* cluster 3 */
+	utg001319l_pilon -- utg000193l_pilon [color=gold, fontcolor=gold, penwidth=1, label=288.2]; /* cluster 3 */
+	utg001319l_pilon -- utg000269l_pilon [color=gold, fontcolor=gold, penwidth=1, label=146.1]; /* cluster 3 */
+	utg001319l_pilon -- utg000303l_pilon [color=gold, fontcolor=gold, penwidth=1, label=74.7]; /* cluster 3 */
+	utg001527l_pilon -- utg000303l_pilon [color=gold, fontcolor=gold, penwidth=1, label=12.4601]; /* cluster 3 */
+	utg001996l_pilon -- utg000442l_pilon [color=gold, fontcolor=gold, penwidth=1, label=223.1]; /* cluster 3 */
+	utg002037l_pilon -- utg001996l_pilon [color=gold, fontcolor=gold, penwidth=1, label=102.9]; /* cluster 3 */
+	utg002945l_pilon -- utg000129l_pilon [color=gold, fontcolor=gold, penwidth=1, label=5.62965]; /* cluster 3 */
+	utg000129l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg000172l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000193l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000229l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg000269l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000303l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000356l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg000442l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg000458l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000488l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg000612l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000763l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 3 */
+	utg000843l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001228l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg001249l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 3 */
+	utg001319l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001335l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001527l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg001688l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001996l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg002037l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg002945l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	label="G_4";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 22 contigs with total size of 40626453 bp */
+	}
+}

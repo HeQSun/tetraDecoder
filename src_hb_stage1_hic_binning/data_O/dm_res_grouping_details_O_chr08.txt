@@ -1,0 +1,1 @@
+/netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/a4_alignment_based_linkage_grouping/zhifiasm_v0p7_dm_O_asm/dm_res_grouping_details_O_chr08.txt

@@ -1,0 +1,6 @@
+O chr06 21 O chr06 22 ./data/OO_chr06_21_22_syri.out
+O chr06 21 O chr06 23 ./data/OO_chr06_21_23_syri.out
+O chr06 21 O chr06 24 ./data/OO_chr06_21_24_syri.out
+O chr06 22 O chr06 23 ./data/OO_chr06_22_23_syri.out
+O chr06 22 O chr06 24 ./data/OO_chr06_22_24_syri.out
+O chr06 23 O chr06 24 ./data/OO_chr06_23_24_syri.out

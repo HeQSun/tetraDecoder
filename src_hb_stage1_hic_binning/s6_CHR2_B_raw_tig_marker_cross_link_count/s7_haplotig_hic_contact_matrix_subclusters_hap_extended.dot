@@ -1,0 +1,297 @@
+/* Here are the merged subclusters of contigs */
+graph	Graph_1 {
+	subgraph cluster_0 {
+	/* merged with subclusters: 5, 11, 2, 6, 3, 1 */
+	utg000022lc_l1 -- utg000169lc [color=gold, fontcolor=gold, penwidth=1, label=0.781929]; /* cluster 0 */
+	utg000026lc -- utg000825lc [color=gold, fontcolor=gold, penwidth=1, label=1.10356]; /* cluster 0 */
+	utg000039lc -- utg001910lc [color=gold, fontcolor=gold, penwidth=1, label=10.1744]; /* cluster 0 */
+	utg000039lc_l1 -- utg000487lc [color=gold, fontcolor=gold, penwidth=1, label=0.653638]; /* cluster 0 */
+	utg000117lc_l14 -- utg000853lc [color=gold, fontcolor=gold, penwidth=1, label=0.584874]; /* cluster 0 */
+	utg000169lc -- utg000029lc [color=gold, fontcolor=gold, penwidth=1, label=125.5]; /* cluster 0 */
+	utg000169lc -- utg000825lc [color=gold, fontcolor=gold, penwidth=1, label=8.52149]; /* cluster 0 */
+	utg000207lc_l90 -- utg000477lc [color=gold, fontcolor=gold, penwidth=1, label=0.873566]; /* cluster 0 */
+	utg000236lc -- utg000825lc [color=gold, fontcolor=gold, penwidth=1, label=1.59932]; /* cluster 0 */
+	utg000241lc_l3 -- utg000150lc [color=gold, fontcolor=gold, penwidth=1, label=0.630211]; /* cluster 0 */
+	utg000414lc_l2 -- utg001021lc_l1 [color=gold, fontcolor=gold, penwidth=1, label=15]; /* cluster 0 */
+	utg000477lc -- utg000169lc [color=gold, fontcolor=gold, penwidth=1, label=11.3]; /* cluster 0 */
+	utg000487lc -- utg000756lc [color=gold, fontcolor=gold, penwidth=1, label=10.8]; /* cluster 0 */
+	utg000501lc -- utg000029lc [color=gold, fontcolor=gold, penwidth=1, label=5.56645]; /* cluster 0 */
+	utg000501lc -- utg000039lc_l3 [color=gold, fontcolor=gold, penwidth=1, label=11.5875]; /* cluster 0 */
+	utg000501lc -- utg006389lc [color=gold, fontcolor=gold, penwidth=1, label=15.553]; /* cluster 0 */
+	utg000557lc -- utg000117lc_l12 [color=gold, fontcolor=gold, penwidth=1, label=11.0979]; /* cluster 0 */
+	utg000562lc -- utg000557lc [color=gold, fontcolor=gold, penwidth=1, label=2.93183]; /* cluster 0 */
+	utg000562lc -- utg001021lc [color=gold, fontcolor=gold, penwidth=1, label=14.789]; /* cluster 0 */
+	utg000644lc_l3 -- utg000039lc [color=gold, fontcolor=gold, penwidth=1, label=0.897896]; /* cluster 0 */
+	utg000756lc -- utg000150lc [color=gold, fontcolor=gold, penwidth=1, label=12]; /* cluster 0 */
+	utg000756lc -- utg000501lc [color=gold, fontcolor=gold, penwidth=1, label=2.47637]; /* cluster 0 */
+	utg000756lc_l2 -- utg000026lc [color=gold, fontcolor=gold, penwidth=1, label=0.614808]; /* cluster 0 */
+	utg000825lc -- utg000287lc_l1 [color=gold, fontcolor=gold, penwidth=1, label=11.1531]; /* cluster 0 */
+	utg000825lc -- utg009281lc [color=gold, fontcolor=gold, penwidth=1, label=11.4721]; /* cluster 0 */
+	utg000853lc -- utg000117lc_l13 [color=gold, fontcolor=gold, penwidth=1, label=17.0719]; /* cluster 0 */
+	utg001021lc -- utg000414lc_l2 [color=gold, fontcolor=gold, penwidth=1, label=13.8048]; /* cluster 0 */
+	utg001021lc -- utg001286lc_l2 [color=gold, fontcolor=gold, penwidth=1, label=14.6459]; /* cluster 0 */
+	utg001021lc -- utg002641lc [color=gold, fontcolor=gold, penwidth=1, label=12.697]; /* cluster 0 */
+	utg001021lc -- utg002753lc [color=gold, fontcolor=gold, penwidth=1, label=15.8642]; /* cluster 0 */
+	utg001122lc -- utg000477lc [color=gold, fontcolor=gold, penwidth=1, label=0.970859]; /* cluster 0 */
+	utg001286lc -- utg000487lc [color=gold, fontcolor=gold, penwidth=1, label=16.7]; /* cluster 0 */
+	utg001286lc -- utg000853lc [color=gold, fontcolor=gold, penwidth=1, label=3.36526]; /* cluster 0 */
+	utg001910lc -- utg000756lc [color=gold, fontcolor=gold, penwidth=1, label=13.289]; /* cluster 0 */
+	utg001910lc -- utg001021lc [color=gold, fontcolor=gold, penwidth=1, label=32.1058]; /* cluster 0 */
+	utg002770lc -- utg000169lc [color=gold, fontcolor=gold, penwidth=1, label=0.557146]; /* cluster 0 */
+	utg003321lc_l1 -- utg000562lc [color=gold, fontcolor=gold, penwidth=1, label=0.631832]; /* cluster 0 */
+	utg004150lc -- utg000029lc [color=gold, fontcolor=gold, penwidth=1, label=0.559346]; /* cluster 0 */
+	utg004587lc -- utg000169lc [color=gold, fontcolor=gold, penwidth=1, label=0.555536]; /* cluster 0 */
+	utg004899lc -- utg001910lc [color=gold, fontcolor=gold, penwidth=1, label=0.600023]; /* cluster 0 */
+	utg006449lc -- utg000039lc [color=gold, fontcolor=gold, penwidth=1, label=0.740927]; /* cluster 0 */
+	utg007067lc -- utg000501lc [color=gold, fontcolor=gold, penwidth=1, label=18.4345]; /* cluster 0 */
+	utg007749lc -- utg000169lc [color=gold, fontcolor=gold, penwidth=1, label=0.575176]; /* cluster 0 */
+	utg008016lc -- utg000117lc_l6 [color=gold, fontcolor=gold, penwidth=1, label=34.2313]; /* cluster 0 */
+	utg008016lc -- utg000418lc [color=gold, fontcolor=gold, penwidth=1, label=11.1957]; /* cluster 0 */
+	utg008016lc -- utg000557lc [color=gold, fontcolor=gold, penwidth=1, label=1.67755]; /* cluster 0 */
+	utg000022lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg000026lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg000029lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000039lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000039lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000039lc_l3 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000117lc_l12 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000117lc_l13 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000117lc_l14 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000117lc_l6 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000150lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000169lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg000207lc_l90 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000236lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000241lc_l3 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000287lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000414lc_l2 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000418lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000477lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg000487lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000501lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000557lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000562lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000644lc_l3 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000756lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000756lc_l2 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000825lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000853lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001021lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001021lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001122lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001286lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001286lc_l2 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001910lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg002641lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg002753lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg002770lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg003321lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg004150lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg004587lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg004899lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg006389lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg006449lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg007067lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg007749lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg008016lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg009281lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	label="G_1";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 47 contigs with total size of 44407231 bp */
+	}
+	subgraph cluster_4 {
+	/* merged with subclusters: 8 */
+	utg000470lc -- utg008169lc [color=gold, fontcolor=gold, penwidth=1, label=1.85215]; /* cluster 4 */
+	utg000752lc -- utg001630lc [color=gold, fontcolor=gold, penwidth=1, label=19.7795]; /* cluster 4 */
+	utg000752lc -- utg001703lc [color=gold, fontcolor=gold, penwidth=1, label=20.8088]; /* cluster 4 */
+	utg000752lc -- utg002357lc [color=gold, fontcolor=gold, penwidth=1, label=13.2952]; /* cluster 4 */
+	utg000752lc -- utg003475lc [color=gold, fontcolor=gold, penwidth=1, label=13.2825]; /* cluster 4 */
+	utg000752lc -- utg003481lc [color=gold, fontcolor=gold, penwidth=1, label=22.9193]; /* cluster 4 */
+	utg000752lc -- utg004239lc [color=gold, fontcolor=gold, penwidth=1, label=19.562]; /* cluster 4 */
+	utg000752lc -- utg004681lc [color=gold, fontcolor=gold, penwidth=1, label=11.4566]; /* cluster 4 */
+	utg000752lc -- utg004694lc [color=gold, fontcolor=gold, penwidth=1, label=18.8634]; /* cluster 4 */
+	utg000752lc -- utg005560lc [color=gold, fontcolor=gold, penwidth=1, label=22.1954]; /* cluster 4 */
+	utg000752lc -- utg005575lc [color=gold, fontcolor=gold, penwidth=1, label=14.8203]; /* cluster 4 */
+	utg000752lc -- utg006081lc [color=gold, fontcolor=gold, penwidth=1, label=19.3235]; /* cluster 4 */
+	utg000752lc -- utg006599lc [color=gold, fontcolor=gold, penwidth=1, label=10.4459]; /* cluster 4 */
+	utg000752lc -- utg007012lc [color=gold, fontcolor=gold, penwidth=1, label=20.7762]; /* cluster 4 */
+	utg000752lc -- utg007215lc [color=gold, fontcolor=gold, penwidth=1, label=14.95]; /* cluster 4 */
+	utg000752lc -- utg007252lc [color=gold, fontcolor=gold, penwidth=1, label=28.4621]; /* cluster 4 */
+	utg000752lc -- utg007292lc [color=gold, fontcolor=gold, penwidth=1, label=17.2673]; /* cluster 4 */
+	utg000752lc -- utg007466lc [color=gold, fontcolor=gold, penwidth=1, label=20.6247]; /* cluster 4 */
+	utg000752lc -- utg007849lc [color=gold, fontcolor=gold, penwidth=1, label=27.7181]; /* cluster 4 */
+	utg000752lc -- utg008169lc [color=gold, fontcolor=gold, penwidth=1, label=27.4187]; /* cluster 4 */
+	utg000752lc -- utg008385lc [color=gold, fontcolor=gold, penwidth=1, label=19.47]; /* cluster 4 */
+	utg001286lc_l1 -- utg001415lc [color=gold, fontcolor=gold, penwidth=1, label=2.10577]; /* cluster 4 */
+	utg001286lc_l4 -- utg000752lc [color=gold, fontcolor=gold, penwidth=1, label=1.68182]; /* cluster 4 */
+	utg001326lc -- utg001415lc [color=gold, fontcolor=gold, penwidth=1, label=6.32228]; /* cluster 4 */
+	utg001415lc -- utg007850lc [color=gold, fontcolor=gold, penwidth=1, label=10.0852]; /* cluster 4 */
+	utg001415lc -- utg008169lc [color=gold, fontcolor=gold, penwidth=1, label=0.937761]; /* cluster 4 */
+	utg002620lc -- utg001415lc [color=gold, fontcolor=gold, penwidth=1, label=1.46233]; /* cluster 4 */
+	utg003154lc_l1 -- utg000470lc [color=gold, fontcolor=gold, penwidth=1, label=0.968992]; /* cluster 4 */
+	utg003815lc -- utg000752lc [color=gold, fontcolor=gold, penwidth=1, label=3.21152]; /* cluster 4 */
+	utg004024lc -- utg001415lc [color=gold, fontcolor=gold, penwidth=1, label=1.26945]; /* cluster 4 */
+	utg004292lc -- utg001326lc [color=gold, fontcolor=gold, penwidth=1, label=0.775059]; /* cluster 4 */
+	utg005146lc -- utg001415lc [color=gold, fontcolor=gold, penwidth=1, label=1.17029]; /* cluster 4 */
+	utg006087lc_l1 -- utg000752lc [color=gold, fontcolor=gold, penwidth=1, label=2.54986]; /* cluster 4 */
+	utg006334lc -- utg001415lc [color=gold, fontcolor=gold, penwidth=1, label=1.35748]; /* cluster 4 */
+	utg006516lc -- utg001415lc [color=gold, fontcolor=gold, penwidth=1, label=1.14741]; /* cluster 4 */
+	utg006920lc -- utg000752lc [color=gold, fontcolor=gold, penwidth=1, label=1.33457]; /* cluster 4 */
+	utg007077lc -- utg000752lc [color=gold, fontcolor=gold, penwidth=1, label=2.60735]; /* cluster 4 */
+	utg000470lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg000752lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg001286lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001286lc_l4 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001326lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg001415lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001630lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg001703lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg002357lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg002620lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg003154lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg003475lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg003481lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg003815lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg004024lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg004239lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg004292lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg004681lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg004694lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg005146lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg005560lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg005575lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg006081lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg006087lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg006334lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg006516lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg006599lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg006920lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg007012lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg007077lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg007215lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg007252lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg007292lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg007466lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg007849lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg007850lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg008169lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	utg008385lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /*  -1  */
+	label="G_2";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 38 contigs with total size of 18527133 bp */
+	}
+	subgraph cluster_7 {
+	/* merged with subclusters: 9 */
+	utg000005lc_l2 -- utg002077lc [color=gold, fontcolor=gold, penwidth=1, label=0.832086]; /* cluster 7 */
+	utg000117lc_l11 -- utg000512lc [color=gold, fontcolor=gold, penwidth=1, label=0.581395]; /* cluster 7 */
+	utg000117lc_l9 -- utg000512lc [color=gold, fontcolor=gold, penwidth=1, label=2.19357]; /* cluster 7 */
+	utg000414lc -- utg000512lc [color=gold, fontcolor=gold, penwidth=1, label=1.33615]; /* cluster 7 */
+	utg000512lc -- utg001190lc [color=gold, fontcolor=gold, penwidth=1, label=1.06877]; /* cluster 7 */
+	utg000669lc -- utg000512lc [color=gold, fontcolor=gold, penwidth=1, label=1.30279]; /* cluster 7 */
+	utg000711lc_l1 -- utg000512lc [color=gold, fontcolor=gold, penwidth=1, label=1.52946]; /* cluster 7 */
+	utg000756lc_l1 -- utg000512lc [color=gold, fontcolor=gold, penwidth=1, label=1.3894]; /* cluster 7 */
+	utg000953lc_l1 -- utg000414lc [color=gold, fontcolor=gold, penwidth=1, label=0.886418]; /* cluster 7 */
+	utg000953lc_l2 -- utg002077lc [color=gold, fontcolor=gold, penwidth=1, label=1.02184]; /* cluster 7 */
+	utg001190lc -- utg002667lc_l1 [color=gold, fontcolor=gold, penwidth=1, label=22.0038]; /* cluster 7 */
+	utg001286lc_l3 -- utg000414lc [color=gold, fontcolor=gold, penwidth=1, label=1.12099]; /* cluster 7 */
+	utg001637lc_l1 -- utg000414lc [color=gold, fontcolor=gold, penwidth=1, label=1.16588]; /* cluster 7 */
+	utg002077lc -- utg000512lc [color=gold, fontcolor=gold, penwidth=1, label=1.19502]; /* cluster 7 */
+	utg003490lc -- utg000512lc [color=gold, fontcolor=gold, penwidth=1, label=11.7479]; /* cluster 7 */
+	utg003490lc -- utg000853lc_l1 [color=gold, fontcolor=gold, penwidth=1, label=17.9924]; /* cluster 7 */
+	utg004082lc -- utg003490lc [color=gold, fontcolor=gold, penwidth=1, label=0.593412]; /* cluster 7 */
+	utg004191lc -- utg000669lc [color=gold, fontcolor=gold, penwidth=1, label=1.1429]; /* cluster 7 */
+	utg004305lc -- utg006467lc [color=gold, fontcolor=gold, penwidth=1, label=0.850297]; /* cluster 7 */
+	utg004968lc -- utg002077lc [color=gold, fontcolor=gold, penwidth=1, label=0.795919]; /* cluster 7 */
+	utg005142lc -- utg002077lc [color=gold, fontcolor=gold, penwidth=1, label=0.712949]; /* cluster 7 */
+	utg005323lc -- utg000512lc [color=gold, fontcolor=gold, penwidth=1, label=1.09765]; /* cluster 7 */
+	utg005384lc_l2 -- utg008311lc [color=gold, fontcolor=gold, penwidth=1, label=1.60156]; /* cluster 7 */
+	utg006335lc -- utg000414lc [color=gold, fontcolor=gold, penwidth=1, label=0.680007]; /* cluster 7 */
+	utg006467lc -- utg002077lc [color=gold, fontcolor=gold, penwidth=1, label=1.22183]; /* cluster 7 */
+	utg007704lc -- utg002667lc_l1 [color=gold, fontcolor=gold, penwidth=1, label=3.29982]; /* cluster 7 */
+	utg008311lc -- utg006467lc [color=gold, fontcolor=gold, penwidth=1, label=2.00582]; /* cluster 7 */
+	utg000005lc_l2 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000117lc_l11 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000117lc_l9 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000414lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000512lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000669lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000711lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000756lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000853lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000953lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000953lc_l2 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001190lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg001286lc_l3 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001637lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg002077lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg002667lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg003490lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg004082lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg004191lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg004305lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg004968lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg005142lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg005323lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg005384lc_l2 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg006335lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg006467lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg007704lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg008311lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	label="G_3";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 28 contigs with total size of 3663569 bp */
+	}
+	subgraph cluster_10 {
+	/* no merging related to this cluster */ 
+	utg000117lc_l1 -- utg008292lc [color=gold, fontcolor=gold, penwidth=1, label=2.59956]; /* cluster 10 */
+	utg000141lc_l3 -- utg001438lc [color=gold, fontcolor=gold, penwidth=1, label=0.788227]; /* cluster 10 */
+	utg000141lc_l4 -- utg001438lc [color=gold, fontcolor=gold, penwidth=1, label=2.60845]; /* cluster 10 */
+	utg000141lc_l5 -- utg001438lc [color=gold, fontcolor=gold, penwidth=1, label=0.884455]; /* cluster 10 */
+	utg000241lc_l5 -- utg001314lc [color=gold, fontcolor=gold, penwidth=1, label=1.16287]; /* cluster 10 */
+	utg000414lc_l9 -- utg001438lc [color=gold, fontcolor=gold, penwidth=1, label=1.71591]; /* cluster 10 */
+	utg000562lc_l1 -- utg001438lc [color=gold, fontcolor=gold, penwidth=1, label=0.787005]; /* cluster 10 */
+	utg000644lc_l5 -- utg001314lc [color=gold, fontcolor=gold, penwidth=1, label=0.924214]; /* cluster 10 */
+	utg001314lc -- utg001438lc [color=gold, fontcolor=gold, penwidth=1, label=1.39061]; /* cluster 10 */
+	utg001438lc -- utg003963lc [color=gold, fontcolor=gold, penwidth=1, label=3.52097]; /* cluster 10 */
+	utg002045lc -- utg001438lc [color=gold, fontcolor=gold, penwidth=1, label=0.602519]; /* cluster 10 */
+	utg002063lc_l2 -- utg001314lc [color=gold, fontcolor=gold, penwidth=1, label=0.691214]; /* cluster 10 */
+	utg002310lc -- utg001438lc [color=gold, fontcolor=gold, penwidth=1, label=0.793204]; /* cluster 10 */
+	utg003963lc -- utg000075lc_l1 [color=gold, fontcolor=gold, penwidth=1, label=26.5294]; /* cluster 10 */
+	utg004428lc -- utg001438lc [color=gold, fontcolor=gold, penwidth=1, label=0.76825]; /* cluster 10 */
+	utg007905lc -- utg001438lc [color=gold, fontcolor=gold, penwidth=1, label=0.729139]; /* cluster 10 */
+	utg008021lc -- utg001438lc [color=gold, fontcolor=gold, penwidth=1, label=0.783822]; /* cluster 10 */
+	utg008058lc -- utg001438lc [color=gold, fontcolor=gold, penwidth=1, label=0.762899]; /* cluster 10 */
+	utg008292lc -- utg001314lc [color=gold, fontcolor=gold, penwidth=1, label=1.42307]; /* cluster 10 */
+	utg000075lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000117lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000141lc_l3 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000141lc_l4 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000141lc_l5 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000241lc_l5 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000414lc_l9 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000562lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000644lc_l5 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg001314lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg001438lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg002045lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg002063lc_l2 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg002310lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg003963lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg004428lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg007905lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg008021lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg008058lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg008292lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	label="G_4";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 20 contigs with total size of 1764637 bp */
+	}
+}

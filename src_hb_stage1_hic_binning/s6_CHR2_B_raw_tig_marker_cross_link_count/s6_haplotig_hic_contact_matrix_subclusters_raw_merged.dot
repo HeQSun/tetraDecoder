@@ -1,0 +1,151 @@
+/* Here are the merged subclusters of contigs */
+graph	Graph_1 {
+	subgraph cluster_0 {
+	/* merged with subclusters: 5, 11, 2, 6, 3, 1 */
+	utg000039lc -- utg001910lc [color=gold, fontcolor=gold, penwidth=1, label=10.1744]; /* cluster 0 */
+	utg000169lc -- utg000029lc [color=gold, fontcolor=gold, penwidth=1, label=125.5]; /* cluster 0 */
+	utg000169lc -- utg000825lc [color=gold, fontcolor=gold, penwidth=1, label=8.52149]; /* cluster 0 */
+	utg000414lc_l2 -- utg001021lc_l1 [color=gold, fontcolor=gold, penwidth=1, label=15]; /* cluster 0 */
+	utg000477lc -- utg000169lc [color=gold, fontcolor=gold, penwidth=1, label=11.3]; /* cluster 0 */
+	utg000487lc -- utg000756lc [color=gold, fontcolor=gold, penwidth=1, label=10.8]; /* cluster 0 */
+	utg000501lc -- utg000029lc [color=gold, fontcolor=gold, penwidth=1, label=5.56645]; /* cluster 0 */
+	utg000501lc -- utg000039lc_l3 [color=gold, fontcolor=gold, penwidth=1, label=11.5875]; /* cluster 0 */
+	utg000501lc -- utg006389lc [color=gold, fontcolor=gold, penwidth=1, label=15.553]; /* cluster 0 */
+	utg000557lc -- utg000117lc_l12 [color=gold, fontcolor=gold, penwidth=1, label=11.0979]; /* cluster 0 */
+	utg000562lc -- utg000557lc [color=gold, fontcolor=gold, penwidth=1, label=2.93183]; /* cluster 0 */
+	utg000562lc -- utg001021lc [color=gold, fontcolor=gold, penwidth=1, label=14.789]; /* cluster 0 */
+	utg000756lc -- utg000150lc [color=gold, fontcolor=gold, penwidth=1, label=12]; /* cluster 0 */
+	utg000756lc -- utg000501lc [color=gold, fontcolor=gold, penwidth=1, label=2.47637]; /* cluster 0 */
+	utg000825lc -- utg000287lc_l1 [color=gold, fontcolor=gold, penwidth=1, label=11.1531]; /* cluster 0 */
+	utg000825lc -- utg009281lc [color=gold, fontcolor=gold, penwidth=1, label=11.4721]; /* cluster 0 */
+	utg000853lc -- utg000117lc_l13 [color=gold, fontcolor=gold, penwidth=1, label=17.0719]; /* cluster 0 */
+	utg001021lc -- utg000414lc_l2 [color=gold, fontcolor=gold, penwidth=1, label=13.8048]; /* cluster 0 */
+	utg001021lc -- utg001286lc_l2 [color=gold, fontcolor=gold, penwidth=1, label=14.6459]; /* cluster 0 */
+	utg001021lc -- utg002641lc [color=gold, fontcolor=gold, penwidth=1, label=12.697]; /* cluster 0 */
+	utg001021lc -- utg002753lc [color=gold, fontcolor=gold, penwidth=1, label=15.8642]; /* cluster 0 */
+	utg001286lc -- utg000487lc [color=gold, fontcolor=gold, penwidth=1, label=16.7]; /* cluster 0 */
+	utg001286lc -- utg000853lc [color=gold, fontcolor=gold, penwidth=1, label=3.36526]; /* cluster 0 */
+	utg001910lc -- utg000756lc [color=gold, fontcolor=gold, penwidth=1, label=13.289]; /* cluster 0 */
+	utg001910lc -- utg001021lc [color=gold, fontcolor=gold, penwidth=1, label=32.1058]; /* cluster 0 */
+	utg007067lc -- utg000501lc [color=gold, fontcolor=gold, penwidth=1, label=18.4345]; /* cluster 0 */
+	utg008016lc -- utg000117lc_l6 [color=gold, fontcolor=gold, penwidth=1, label=34.2313]; /* cluster 0 */
+	utg008016lc -- utg000418lc [color=gold, fontcolor=gold, penwidth=1, label=11.1957]; /* cluster 0 */
+	utg008016lc -- utg000557lc [color=gold, fontcolor=gold, penwidth=1, label=1.67755]; /* cluster 0 */
+	utg000029lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000039lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000039lc_l3 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000117lc_l12 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000117lc_l13 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000117lc_l6 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000150lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000169lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg000287lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000414lc_l2 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000418lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000477lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg000487lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000501lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000557lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000562lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000756lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000825lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg000853lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001021lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001021lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001286lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001286lc_l2 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001910lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg002641lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg002753lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg006389lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg007067lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg008016lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg009281lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	label="G_1";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 30 contigs with total size of 28075108 bp */
+	}
+	subgraph cluster_4 {
+	/* merged with subclusters: 8 */
+	utg000752lc -- utg001630lc [color=gold, fontcolor=gold, penwidth=1, label=19.7795]; /* cluster 4 */
+	utg000752lc -- utg001703lc [color=gold, fontcolor=gold, penwidth=1, label=20.8088]; /* cluster 4 */
+	utg000752lc -- utg002357lc [color=gold, fontcolor=gold, penwidth=1, label=13.2952]; /* cluster 4 */
+	utg000752lc -- utg003475lc [color=gold, fontcolor=gold, penwidth=1, label=13.2825]; /* cluster 4 */
+	utg000752lc -- utg003481lc [color=gold, fontcolor=gold, penwidth=1, label=22.9193]; /* cluster 4 */
+	utg000752lc -- utg004239lc [color=gold, fontcolor=gold, penwidth=1, label=19.562]; /* cluster 4 */
+	utg000752lc -- utg004681lc [color=gold, fontcolor=gold, penwidth=1, label=11.4566]; /* cluster 4 */
+	utg000752lc -- utg004694lc [color=gold, fontcolor=gold, penwidth=1, label=18.8634]; /* cluster 4 */
+	utg000752lc -- utg005560lc [color=gold, fontcolor=gold, penwidth=1, label=22.1954]; /* cluster 4 */
+	utg000752lc -- utg005575lc [color=gold, fontcolor=gold, penwidth=1, label=14.8203]; /* cluster 4 */
+	utg000752lc -- utg006081lc [color=gold, fontcolor=gold, penwidth=1, label=19.3235]; /* cluster 4 */
+	utg000752lc -- utg006599lc [color=gold, fontcolor=gold, penwidth=1, label=10.4459]; /* cluster 4 */
+	utg000752lc -- utg007012lc [color=gold, fontcolor=gold, penwidth=1, label=20.7762]; /* cluster 4 */
+	utg000752lc -- utg007215lc [color=gold, fontcolor=gold, penwidth=1, label=14.95]; /* cluster 4 */
+	utg000752lc -- utg007252lc [color=gold, fontcolor=gold, penwidth=1, label=28.4621]; /* cluster 4 */
+	utg000752lc -- utg007292lc [color=gold, fontcolor=gold, penwidth=1, label=17.2673]; /* cluster 4 */
+	utg000752lc -- utg007466lc [color=gold, fontcolor=gold, penwidth=1, label=20.6247]; /* cluster 4 */
+	utg000752lc -- utg007849lc [color=gold, fontcolor=gold, penwidth=1, label=27.7181]; /* cluster 4 */
+	utg000752lc -- utg008169lc [color=gold, fontcolor=gold, penwidth=1, label=27.4187]; /* cluster 4 */
+	utg000752lc -- utg008385lc [color=gold, fontcolor=gold, penwidth=1, label=19.47]; /* cluster 4 */
+	utg001415lc -- utg007850lc [color=gold, fontcolor=gold, penwidth=1, label=10.0852]; /* cluster 4 */
+	utg001415lc -- utg008169lc [color=gold, fontcolor=gold, penwidth=1, label=0.937761]; /* cluster 4 */
+	utg000752lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg001415lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001630lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* -1 */
+	utg001703lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* -1 */
+	utg002357lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* -1 */
+	utg003475lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* -1 */
+	utg003481lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* -1 */
+	utg004239lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* -1 */
+	utg004681lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* -1 */
+	utg004694lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* -1 */
+	utg005560lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* -1 */
+	utg005575lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* -1 */
+	utg006081lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* -1 */
+	utg006599lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* -1 */
+	utg007012lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* -1 */
+	utg007215lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* -1 */
+	utg007252lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* -1 */
+	utg007292lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* -1 */
+	utg007466lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* -1 */
+	utg007849lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* -1 */
+	utg007850lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 */
+	utg008169lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* -1 */
+	utg008385lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* -1 */
+	label="G_2";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 23 contigs with total size of 2198867 bp */
+	}
+	subgraph cluster_7 {
+	/* merged with subclusters: 9 */
+	utg000512lc -- utg001190lc [color=gold, fontcolor=gold, penwidth=1, label=1.06877]; /* cluster 7 */
+	utg001190lc -- utg002667lc_l1 [color=gold, fontcolor=gold, penwidth=1, label=22.0038]; /* cluster 7 */
+	utg003490lc -- utg000512lc [color=gold, fontcolor=gold, penwidth=1, label=11.7479]; /* cluster 7 */
+	utg003490lc -- utg000853lc_l1 [color=gold, fontcolor=gold, penwidth=1, label=17.9924]; /* cluster 7 */
+	utg000512lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg000853lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	utg001190lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg002667lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg003490lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 2 */
+	label="G_3";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 5 contigs with total size of 1454087 bp */
+	}
+	subgraph cluster_10 {
+	/* no merging related to this cluster */ 
+	utg003963lc -- utg000075lc_l1 [color=gold, fontcolor=gold, penwidth=1, label=26.5294]; /* cluster 10 */
+	utg000075lc_l1 [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	utg003963lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 */
+	label="G_4";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 2 contigs with total size of 56541 bp */
+	}
+}

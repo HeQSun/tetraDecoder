@@ -1,0 +1,3 @@
+libgzstream.a  -- you may need to re-compile the library on different operating systems.
+
+lib for reading gzipped file downloaded at: http://www.cs.unc.edu/Research/compgeom/gzstream/

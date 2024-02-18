@@ -1,0 +1,16 @@
+cd /biodata/dep_mercier/grp_schneeberger/projects/methods/src_shq/z_GameteBinning_potato_multivar/src_zaux_phase_correct
+
+mkdir data 
+cd data
+
+# hapi 
+
+ln -s /netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/a6_lg_wise_scaffolding/scaf_A/s_read_realign_chr01/juicebox_correction_1/zcorrection_1_juicebox_DM_strand/groups.asm.hap1_strand_raw.review.oneseq.assembly ln_hap1.assembly
+ln -s /netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/a6_lg_wise_scaffolding/scaf_A/s_read_realign_chr01/juicebox_correction_1/zcorrection_1_juicebox_DM_strand/ln_homLG_chr01_LG_1_non_organelle_hapid.fasta ln_hap1_ctgs.fasta
+
+# hapj
+
+ln -s /netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/a6_lg_wise_scaffolding/scaf_A/s_read_realign_chr01/juicebox_correction_4/zcorrection_4_juicebox_DM_strand/groups.asm.hap4_strand_raw.review.oneseq.assembly ln_hap2.assembly
+ln -s /netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/a6_lg_wise_scaffolding/scaf_A/s_read_realign_chr01/juicebox_correction_4/zcorrection_4_juicebox_DM_strand/ln_homLG_chr01_LG_4_non_organelle_hapid.fasta ln_hap2_ctgs.fasta
+
+cd ..

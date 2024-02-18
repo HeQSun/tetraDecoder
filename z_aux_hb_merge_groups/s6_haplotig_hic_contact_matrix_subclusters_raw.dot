@@ -1,0 +1,93 @@
+/* Here are the raw subclusters of selected haplotigs */
+graph	Graph_1 {
+	subgraph cluster_0 {
+	utg000011l_pilon -- utg000065l_pilon [color=gold, penwidth=1, arrowsize=1, label=297.6]; /* cluster 0 */
+	utg000065l_pilon -- utg000631l_pilon [color=gold, penwidth=1, arrowsize=1, label=88.1]; /* cluster 0 */
+	utg000065l_pilon -- utg001022l_pilon [color=gold, penwidth=1, arrowsize=1, label=109.3]; /* cluster 0 */
+	utg000065l_pilon -- utg001712l_pilon [color=gold, penwidth=1, arrowsize=1, label=80.7862]; /* cluster 0 */
+	utg001022l_pilon -- utg000631l_pilon [color=gold, penwidth=1, arrowsize=1, label=208.1]; /* cluster 0 */
+	utg001560l_pilon -- utg000011l_pilon [color=gold, penwidth=1, arrowsize=1, label=74.9016]; /* cluster 0 */
+	utg001560l_pilon -- utg000094l_pilon [color=gold, penwidth=1, arrowsize=1, label=577.883]; /* cluster 0 */
+	utg002109l_pilon -- utg000065l_pilon [color=gold, penwidth=1, arrowsize=1, label=70.7949]; /* cluster 0 */
+	utg002109l_pilon -- utg000631l_pilon [color=gold, penwidth=1, arrowsize=1, label=275.742]; /* cluster 0 */
+	utg002109l_pilon -- utg001022l_pilon [color=gold, penwidth=1, arrowsize=1, label=267.203]; /* cluster 0 */
+	utg000011l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg000065l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg000094l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg000631l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg001022l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg001560l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg001712l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg002109l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	label="G_1";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 8 contigs with total size of 20986856 bp */
+	}
+	subgraph cluster_1 {
+	utg000108l_pilon -- utg001422l_pilon [color=gold, penwidth=1, arrowsize=1, label=611.8]; /* cluster 1 */
+	utg000108l_pilon -- utg005218l_pilon [color=gold, penwidth=1, arrowsize=1, label=108.859]; /* cluster 1 */
+	utg001422l_pilon -- utg000240l_pilon [color=gold, penwidth=1, arrowsize=1, label=134.9]; /* cluster 1 */
+	utg000108l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg000240l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg001422l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg005218l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	label="G_2";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 4 contigs with total size of 13163685 bp */
+	}
+	subgraph cluster_2 {
+	utg000124l_pilon -- utg001493l_pilon [color=gold, penwidth=1, arrowsize=1, label=78.5]; /* cluster 2 */
+	utg000885l_pilon -- utg000124l_pilon [color=gold, penwidth=1, arrowsize=1, label=170.4]; /* cluster 2 */
+	utg000885l_pilon -- utg001493l_pilon [color=gold, penwidth=1, arrowsize=1, label=145.6]; /* cluster 2 */
+	utg001493l_pilon -- utg001151l_pilon [color=gold, penwidth=1, arrowsize=1, label=97.3359]; /* cluster 2 */
+	utg000124l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg000885l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg001151l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg001493l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	label="G_3";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 4 contigs with total size of 4519967 bp */
+	}
+	subgraph cluster_3 {
+	utg001149l_pilon -- utg001171l_pilon [color=gold, penwidth=1, arrowsize=1, label=138.5]; /* cluster 3 */
+	utg001149l_pilon -- utg002484l_pilon [color=gold, penwidth=1, arrowsize=1, label=112.338]; /* cluster 3 */
+	utg001171l_pilon -- utg001221l_pilon [color=gold, penwidth=1, arrowsize=1, label=98.9]; /* cluster 3 */
+	utg001259l_pilon -- utg001149l_pilon [color=gold, penwidth=1, arrowsize=1, label=92.1]; /* cluster 3 */
+	utg001149l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 : 20000001~40000000 */
+	utg001171l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 : 20000001~40000000 */
+	utg001221l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 : 20000001~40000000 */
+	utg001259l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 : 20000001~40000000 */
+	utg002484l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 : 20000001~40000000 */
+	label="G_4";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 5 contigs with total size of 3047316 bp */
+	}
+	subgraph cluster_4 {
+	utg001169l_pilon -- utg001836l_pilon [color=gold, penwidth=1, arrowsize=1, label=78.2642]; /* cluster 4 */
+	utg001169l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 : 20000001~40000000 */
+	utg001836l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 : 20000001~40000000 */
+	label="G_5";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 2 contigs with total size of 877903 bp */
+	}
+	subgraph cluster_5 {
+	utg004038l_pilon -- utg003113l_pilon [color=gold, penwidth=1, arrowsize=1, label=71.7747]; /* cluster 5 */
+	utg003113l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 : 20000001~40000000 */
+	utg004038l_pilon [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 : 20000001~40000000 */
+	label="G_6";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 2 contigs with total size of 229886 bp */
+	}
+}

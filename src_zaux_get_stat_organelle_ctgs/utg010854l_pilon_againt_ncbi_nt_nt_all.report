@@ -1,0 +1,16 @@
+
+   Info: read contig size info... 
+   Info: reading contig size info from /netscratch/dep_mercier/grp_schneeberger/projects/Potato_single_cells/reference_manish_assembled_haplotye_aware/hifiasm_assembly_polish_and_select_v2/s0_select_long_contigs_v2/exclude_subset_5/HiFiasm_ref_pilon_6366long_ctgs_selected.ctgsizes
+   Info: 6366 contig size info collected. 
+   Info: read contig size info done. 
+   Info: read blast output of the contig...
+
+   Report: top 3 hits of contig utg010854l_pilon of size 21162 bp includes 
+           utg010854l_pilon	21162	MN104801.1 Solanum tuberosum cultivar Desiree chromosome 1 mitochondrion, 	21166	21082
+           utg010854l_pilon	21162	MF989961.1 Solanum commersonii strain Lz3.2 chromosome 2 mitochondrion, 	21166	21082
+           utg010854l_pilon	21162	MF989960.1 Solanum commersonii strain Lz3.2 chromosome 1 mitochondrion, 	21166	21082
+   Note: contig-id size-bp subject coverage-bp identity-bp; tab-separated. 
+
+   Info: read blast output of the contig done.
+   Time consumed: 0.031037 seconds
+

@@ -1,0 +1,1 @@
+./interhap_gap_filling ./data/groups.asm.hap2_manu_4th.oneseq.fasta chr01_hap2 81000000 83000000 ./data/from_ln_homLG_chr01_LG_4_non_organelle_hapid.updated.fasta ./data/from_groups.asm.hap4_strand_raw.review.oneseq.updated.ragoo.assembly ./data/groups.asm.hap4_manu_4th.oneseq.agp 79500000 chr01_LG_4_230321

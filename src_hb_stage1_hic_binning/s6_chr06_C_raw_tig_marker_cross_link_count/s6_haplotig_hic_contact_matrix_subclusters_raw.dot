@@ -1,0 +1,74 @@
+/* Here are the raw subclusters of selected haplotigs */
+graph	Graph_1 {
+	subgraph cluster_0 {
+	utg000172lc -- utg000982lc [color=gold, penwidth=1, arrowsize=1, label=31.5]; /* cluster 0 */
+	utg000975lc -- utg000172lc [color=gold, penwidth=1, arrowsize=1, label=32.9]; /* cluster 0 */
+	utg000982lc -- utg001306lc [color=gold, penwidth=1, arrowsize=1, label=35.0414]; /* cluster 0 */
+	utg001306lc -- utg000172lc [color=gold, penwidth=1, arrowsize=1, label=42.0017]; /* cluster 0 */
+	utg001423lc -- utg001306lc [color=gold, penwidth=1, arrowsize=1, label=33.9932]; /* cluster 0 */
+	utg002051lc -- utg000808lc [color=gold, penwidth=1, arrowsize=1, label=47.0053]; /* cluster 0 */
+	utg002051lc -- utg001423lc [color=gold, penwidth=1, arrowsize=1, label=44.4769]; /* cluster 0 */
+	utg002051lc -- utg003824lc [color=gold, penwidth=1, arrowsize=1, label=35.7191]; /* cluster 0 */
+	utg000172lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg000808lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg000975lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg000982lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg001306lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg001423lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg002051lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg003824lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	label="G_1";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 8 contigs with total size of 7603334 bp */
+	}
+	subgraph cluster_1 {
+	utg000203lc -- utg001030lc [color=gold, penwidth=1, arrowsize=1, label=32.6]; /* cluster 1 */
+	utg001030lc -- utg002507lc [color=gold, penwidth=1, arrowsize=1, label=47.0952]; /* cluster 1 */
+	utg000203lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg001030lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg002507lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	label="G_2";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 3 contigs with total size of 6032686 bp */
+	}
+	subgraph cluster_2 {
+	utg000338lc -- utg000463lc [color=gold, penwidth=1, arrowsize=1, label=36.5]; /* cluster 2 */
+	utg000338lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	utg000463lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 0 : 1~20000000 */
+	label="G_3";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 2 contigs with total size of 1992813 bp */
+	}
+	subgraph cluster_3 {
+	utg000410lc -- utg002177lc [color=gold, penwidth=1, arrowsize=1, label=46.8]; /* cluster 3 */
+	utg000410lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 : 20000001~40000000 */
+	utg002177lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 : 20000001~40000000 */
+	label="G_4";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 2 contigs with total size of 1980534 bp */
+	}
+	subgraph cluster_4 {
+	utg001124lc -- utg000824lc [color=gold, penwidth=1, arrowsize=1, label=31.4]; /* cluster 4 */
+	utg001124lc -- utg001759lc [color=gold, penwidth=1, arrowsize=1, label=52.4]; /* cluster 4 */
+	utg001252lc -- utg000824lc [color=gold, penwidth=1, arrowsize=1, label=35.2778]; /* cluster 4 */
+	utg001252lc -- utg001124lc [color=gold, penwidth=1, arrowsize=1, label=31.2761]; /* cluster 4 */
+	utg001759lc -- utg000824lc [color=gold, penwidth=1, arrowsize=1, label=109.9]; /* cluster 4 */
+	utg000824lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 : 20000001~40000000 */
+	utg001124lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 : 20000001~40000000 */
+	utg001252lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 : 20000001~40000000 */
+	utg001759lc [color=orangered, style=filled, fillcolor=orangered, fontcolor=white]; /* 1 : 20000001~40000000 */
+	label="G_5";
+	fontsize=90;
+	fontcolor=orangered;
+	color=gray;
+	/* 4 contigs with total size of 2489109 bp */
+	}
+}
