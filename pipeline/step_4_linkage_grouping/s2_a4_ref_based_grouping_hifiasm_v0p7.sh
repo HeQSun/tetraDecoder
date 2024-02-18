@@ -1,5 +1,5 @@
 # Here we align initial assembly of hifiasm v0p7 to DM to find 12 linkage groups (with four haplotypes still mixed)
-#    DM sequence: /netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/zaux_reference_dm/reference_sequence/DM_1-3_516_R44_potato_genome_assembly.v6.1.fa
+#    DM sequence: /path/to/reference_sequence/DM_1-3_516_R44_potato_genome_assembly.v6.1.fa
 #    caution: paths and/or file names of DM and cultivar assemblies should be updated.
 #    customized tool: ref_linkage_grouper
 
@@ -17,7 +17,7 @@ for sample in A B C D E F G H I J O; do
    cd ${wd}/a4_alignment_based_linkage_grouping/
    mkdir zhifiasm_v0p7_dm_${sample}_asm
    cd zhifiasm_v0p7_dm_${sample}_asm
-   dm_ref=../../zaux_reference_dm/reference_sequence/DM_1-3_516_R44_potato_genome_assembly.v6.1.fa
+   dm_ref=../../reference_sequence/DM_1-3_516_R44_potato_genome_assembly.v6.1.fa
    subset_id=4  # update this 
    assembly=../../a2_initial_assembly/sample_${sample}/hifiasm_asm_v0p7/subset${subset_id}_illu_re_align_purge_ovl/DNB_align/clipped${subset_id}_${sample}_hifiasm.p_utg.gfa.fa
    ll ${dm_ref} ${assembly}
