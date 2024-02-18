@@ -5,4 +5,4 @@ Here we introduce the pipeline for phasing tetraploid genomes, i.e., using long 
 Pipeline of assembly
 =
 
-Please check [Pipeline.md](https://github.com/HeQSun/tetraDecoder/blob/main/Pipeline.md)
+Please check [Pipeline.md](https://github.com/HeQSun/tetraDecoder/blob/main/Pipeline)
