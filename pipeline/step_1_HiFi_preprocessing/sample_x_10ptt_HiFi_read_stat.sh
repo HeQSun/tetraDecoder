@@ -2,14 +2,14 @@
 
 wd=/your/working/path/
 # e.g.,
-# wd=/netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/a1_HiFi_stats/
+# wd=/working/path/to/a1_HiFi_stats/
 
 # done 
 for sample in A B C D E F G H I J; do 
     cd ${wd}
     mkdir sample_${sample}
     cd sample_${sample}
-    ccs=/biodata/dep_mercier/grp_schneeberger/reads/Potato/multi_cultivars_2021/3_10_Cultivars_PacBio_HiFi/sample_${sample}/*/*.gz
+    ccs=/path/to/long/reads/sample_${sample}/*/*.gz
     bsub -q normal -o zcat.log -e zcat.err  "echo 0; zcat ${ccs} > sample_${sample}_zcat_HiFi.fastq"
 done
 
@@ -19,7 +19,7 @@ for sample in A B C D E F G H I J; do
     cd ${wd}
     #
     # quality checking: python3 necessay!
-    bsub -q ioheavy -n 20 -R "span[hosts=1] rusage[mem=180000]" -M 180000 -o longQC.log -e longQC.err "/netscratch/dep_mercier/grp_schneeberger/bin/bin/anaconda/install/bin/python3.7 /netscratch/dep_mercier/grp_schneeberger/bin/LongQC/longQC.py sampleqc -x pb-rs2 -c sample_${sample}_zcat_HiFi_trim.fastq -o qc_hifi -p 20 sample_${sample}_zcat_HiFi.fastq; cat sample_${sample}_zcat_HiFi_trim.fastq | awk '{if(NR%4==2) print length(\$1)}' > sample_${sample}_zcat_HiFi_length_4cells.txt"
+    bsub -q ioheavy -n 20 -R "span[hosts=1] rusage[mem=180000]" -M 180000 -o longQC.log -e longQC.err "python3.7 longQC.py sampleqc -x pb-rs2 -c sample_${sample}_zcat_HiFi_trim.fastq -o qc_hifi -p 20 sample_${sample}_zcat_HiFi.fastq; cat sample_${sample}_zcat_HiFi_trim.fastq | awk '{if(NR%4==2) print length(\$1)}' > sample_${sample}_zcat_HiFi_length_4cells.txt"
     #
     # length checking: raw data 
     ccs=sample_${sample}_zcat_HiFi.fastq
