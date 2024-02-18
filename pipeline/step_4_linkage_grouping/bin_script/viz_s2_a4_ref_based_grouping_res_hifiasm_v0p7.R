@@ -1,6 +1,6 @@
 # visualize the grouping details: 1. how much bp grouped. 2. how each contig is grouped
 #
-# shq path if you would like to check data format: path="/netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/a4_alignment_based_linkage_grouping/"
+# shq path if you would like to check data format: path="/path/to/a4_alignment_based_linkage_grouping/"
 path="/your/working/path"
 setwd(path)
 #
@@ -14,10 +14,10 @@ layout(m, heights = rep(1, 4) )
 library("scales")
 #
 dm_12_ids    <- c("chr01", "chr02", "chr03", "chr04", "chr05", "chr06", "chr07", "chr08", "chr09", "chr10", "chr11", "chr12")
-dm_12_lg_size<- read.table("/netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/zaux_reference_dm/reference_sequence/DM_1-3_516_R44_potato_genome_assembly.v6.1_main12.chrids")
+dm_12_lg_size<- read.table("/path/to/reference_sequence/DM_1-3_516_R44_potato_genome_assembly.v6.1_main12.chrids")
 #
 stie1_12_ids <- c("Stie_Chr_1_1_mapped_homLG_6_LG_20","Stie_Chr_2_1_mapped_homLG_11_LG_30","Stie_Chr_3_1_mapped_homLG_4_LG_17","Stie_Chr_4_1_mapped_homLG_9_LG_28","Stie_Chr_5_1_mapped_homLG_12_LG_1","Stie_Chr_6_1_mapped_homLG_3_LG_13","Stie_Chr_7_1_mapped_homLG_8_LG_37","Stie_Chr_8_1_mapped_homLG_10_LG_3","Stie_Chr_9_1_mapped_homLG_5_LG_29","Stie_Chr_10_1_mapped_homLG_1_LG_42","Stie_Chr_11_1_mapped_homLG_2_LG_12","Stie_Chr_12_1_mapped_homLG_7_LG_24")
-stie1_12_lg_size <- read.table("/netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/zaux_reference_stie1/reference_genome/Stie1_genome.chr")
+stie1_12_lg_size <- read.table("/path/to/reference_genome/Stie1_genome.chr")
 #
 lg_12_ids <- c(dm_12_ids, stie1_12_ids)
 #
