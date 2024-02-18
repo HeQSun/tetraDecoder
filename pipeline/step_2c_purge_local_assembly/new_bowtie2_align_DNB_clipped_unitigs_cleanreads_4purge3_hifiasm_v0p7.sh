@@ -37,7 +37,7 @@ sed -i 's/contig_/l/g' clipped${subset_id}_${sample}_hifiasm.p_utg.gfa.fa
 fasta_length clipped${subset_id}_${sample}_hifiasm.p_utg.gfa.fa | grep '>' | sed 's/>//g' > clipped${subset_id}_${sample}_hifiasm.p_utg.gfa.fa.ctgsizes
 #
 # calcuate N50
-bsub -o calc_CN50.log -e calc_CN50.err "/srv/netscratch/dep_mercier/grp_schneeberger/projects/mutation_tree/Apricot/bin/GitHub-schneeberger-group-jac/toolbox/Analysis/Assembly/calc_CN50.pl clipped${subset_id}_${sample}_hifiasm.p_utg.gfa.fa 844000000 1 > clipped${subset_id}_${sample}_hifiasm.p_utg.gfa.N50.calc.result.txt"
+bsub -o calc_CN50.log -e calc_CN50.err "/path/to/GitHub-schneeberger-group-jac/toolbox/Analysis/Assembly/calc_CN50.pl clipped${subset_id}_${sample}_hifiasm.p_utg.gfa.fa 844000000 1 > clipped${subset_id}_${sample}_hifiasm.p_utg.gfa.N50.calc.result.txt"
 
 # step 1. index reference
 
