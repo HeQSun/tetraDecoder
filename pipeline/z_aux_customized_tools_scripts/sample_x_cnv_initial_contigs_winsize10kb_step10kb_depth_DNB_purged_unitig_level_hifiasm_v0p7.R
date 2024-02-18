@@ -10,7 +10,7 @@ for (sample in LETTERS[c(1,2,3,4,5,6,7,8,9,10,15)])
         subfolder=paste("subset",subset,"_illu_re_align_purge_ovl/DNB_align", sep="")
         #subfolder=paste("subset",subset,"_hifi_re_align_purge_dup_ctg/DNB_align", sep="")
         #
-        path <- paste("/netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/a2_initial_assembly/sample_",sample,"/hifiasm_asm_v0p7/",subfolder,"/", sep="")
+        path <- paste("/path/to/a2_initial_assembly/sample_",sample,"/hifiasm_asm_v0p7/",subfolder,"/", sep="")
         setwd(path)
         #
         pdf(paste(path, "sample_",sample,"_cnv_initial_contigs_winsize10kb_step10kb_depth.pdf", sep=""), family="Helvetica", height= 3, width=7.08661)
@@ -19,7 +19,7 @@ for (sample in LETTERS[c(1,2,3,4,5,6,7,8,9,10,15)])
         winsize  <- 10000
         winstep  <- winsize
         # raw before any purge
-        path_raw <- paste("/netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/a2_initial_assembly/sample_",sample,"/hifiasm_asm_v0p7/z_DNB_no_purge_depth_illu/", sep="")        
+        path_raw <- paste("/path/to/a2_initial_assembly/sample_",sample,"/hifiasm_asm_v0p7/z_DNB_no_purge_depth_illu/", sep="")        
         win_raw  <- read.table(paste(path_raw, "/cnv_winsize", winsize, "_step", winstep,"_hq.txt", sep=""))
         if(sample=="O")
         {
@@ -32,7 +32,7 @@ for (sample in LETTERS[c(1,2,3,4,5,6,7,8,9,10,15)])
         if(0)
         {
            # test only
-           low_cov_list <- read.table("/netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/a2_initial_assembly/sample_C/hifiasm_asm/subset1_illu_re_align_purge_ovl/DNB_align/low_cov_ctgs_to_excluded.list")
+           low_cov_list <- read.table("/path/to/a2_initial_assembly/sample_C/hifiasm_asm/subset1_illu_re_align_purge_ovl/DNB_align/low_cov_ctgs_to_excluded.list")
            win2 <- win3[!(win3$V1 %in% low_cov_list$V1), ]
         }else
         {
