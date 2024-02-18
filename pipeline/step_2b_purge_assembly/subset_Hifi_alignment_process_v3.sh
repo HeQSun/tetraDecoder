@@ -38,7 +38,6 @@ echo "get reads: $6"
 ptthifi=$6
 
 # sample="B"
-# folder=/netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/a2_initial_assembly/sample_${sample}/hifiasm_asm/XXX/
 cd ${folder}
 
 # genome=../${sample}_hifiasm.bp.p_utg.gfa.fasta
