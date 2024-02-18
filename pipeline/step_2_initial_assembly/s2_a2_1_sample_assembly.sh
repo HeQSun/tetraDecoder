@@ -26,8 +26,6 @@ for sample in A B C D E F G H I J; do
     ln -s ../../../a1_HiFi_stats/sample_${sample}/sample_${sample}_zcat_HiFi_trim.fastq.gz sample_${sample}.fastq.gz
     # this higher version of hifiasm has many redundant contigs
     # ln -s /netscratch/dep_mercier/grp_schneeberger/bin/hifiasm/hifiasm-0.16/hifiasm hifiasm
-    # I am testing the lower version 
-    ln -s /netscratch/dep_mercier/grp_schneeberger/projects/Method/gamete_binning_book_chapter_v9_ms/software/bin//hifiasm hifiasm
     #
     hifi=sample_${sample}.fastq.gz
     # discarded - as v0.16 gave many redundant unitigs and low N50!
@@ -55,7 +53,7 @@ for sample in A B D E F G H I J; do
     cat ${outprefix}.gfa | grep '^L' > ${outprefix}.gfa.links
     #
     # N50
-    /srv/netscratch/dep_mercier/grp_schneeberger/projects/mutation_tree/Apricot/bin/GitHub-schneeberger-group-jac/toolbox/Analysis/Assembly/calc_CN50.pl ${outprefix}.gfa.fasta 844000000 1 &> ${outprefix}.gfa.N50.calc.result.txt&
+    /path/to/GitHub-schneeberger-group-jac/toolbox/Analysis/Assembly/calc_CN50.pl ${outprefix}.gfa.fasta 844000000 1 &> ${outprefix}.gfa.N50.calc.result.txt&
     #
     ####################################################################################################################
 #
@@ -78,61 +76,4 @@ ln -s ../../../a1_HiFi_stats/sample_${sample}/sample_${sample}_zcat_HiFi_trim.fa
 hifi=sample_${sample}.fastq
 bsub -q ioheavy -R "rusage[mem=120000]" -M 120000 -n 20 -o ${sample}_${tool}.log -e ${sample}_${tool}.err "${tool} minInputCoverage=2 -p ${sample}_${tool} -d ${sample}_${tool} -pacbio-hifi ${hifi} useGrid=false genomeSize=840m corMinCoverage=1 corOutCoverage=30 minOverlapLength=1000 correctedErrorRate=0.03 executiveThreads=20 > ${tool}_${sample}.log"
 #
-/srv/netscratch/dep_mercier/grp_schneeberger/projects/mutation_tree/Apricot/bin/GitHub-schneeberger-group-jac/toolbox/Analysis/Assembly/calc_CN50.pl C_canu.contigs.fasta 844000000 1 &> C_canu.bp.p_utg.gfa.N50.calc.result.txt&
-
-
-########################################################################################################################
-#
-# b.3.1 (optional) Assembly with flye 2.9-b1774: /netscratch/dep_mercier/grp_schneeberger/bin/Flye/flye2022/Flye/bin/flye
-#
-wd=/working/path/
-cd ${wd}
-sample="C"
-tool="flye"
-cd ${wd}/sample_${sample}
-mkdir ${tool}_asm
-cd ${tool}_asm
-#
-ln -s ../../../a1_HiFi_stats/sample_${sample}/sample_${sample}_zcat_HiFi_trim.fastq sample_${sample}.fastq
-#
-hifi=sample_${sample}.fastq
-bsub -q ioheavy -R "rusage[mem=160000]" -M 160000 -n 20 -o ${sample}_${tool}.log -e ${sample}_${tool}.err "${tool} --threads 20 -g 3.4g -m 1000 --keep-haplotypes --scaffold --pacbio-hifi ${hifi} --read-error 0.03 --out-dir ${sample}_${tool} > ${tool}_${sample}.log "
-
-
-########################################################################################################################
-#
-# b.4.1 (optional) Assembly with LJA - this one failed during running.
-#
-wd=/working/path/
-cd ${wd}
-sample="C"
-tool="lja"
-cd ${wd}/sample_${sample}
-mkdir ${tool}_asm
-cd ${tool}_asm
-#
-ln -s /opt/share/software/scs/appStore/stretchApps/assembly/lja/v0.2/bin/lja ln_lja
-ln -s ../../../a1_HiFi_stats/sample_${sample}/sample_${sample}_zcat_HiFi_trim.fastq sample_${sample}.fastq
-#
-hifi=sample_${sample}.fastq
-bsub -q ioheavy -R "rusage[mem=160000]" -M 160000 -n 20 -o ${sample}_${tool}.log -e ${sample}_${tool}.err "./ln_${tool} -t 20 --diploid -o ./ --reads ${hifi} > ${tool}_${sample}.log"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/path/to/GitHub-schneeberger-group-jac/toolbox/Analysis/Assembly/calc_CN50.pl C_canu.contigs.fasta 844000000 1 &> C_canu.bp.p_utg.gfa.N50.calc.result.txt&
