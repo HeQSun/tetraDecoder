@@ -62,9 +62,6 @@ ll ${genome} ${reads}
 # run substep1. get alignments etc.
 bsub -q ioheavy -n ${nthread} -R "span[hosts=1] rusage[mem=80000]" -M 80000 -o subset_Hifi_alignment_process_v3.log -e subset_Hifi_alignment_process_v3.err "../../../../subset_Hifi_alignment_process_v3.sh ${sample} ${this_path} ${subset_id} ${nthread} ${genome} ${reads} > subset_Hifi_alignment_process_details.log"
 # run substep2. convert bam to cram after finishing alignment above: save ~45%
-#### below requiring samtools 1.9 Using htslib 1.9
-#### nthread=8
-#### bsub -o bam2cram.log -e bam2cram.err -q ioheavy -n ${nthread} -R "span[hosts=1] rusage[mem=2000]" -M 2000 "/netscratch/dep_mercier/grp_schneeberger/bin/bin/anaconda/install/envs/purge_haplotigsenv/bin/samtools view -@ ${nthread} -C -T ${genome} -o ptt${sample}_hiasm_ref_pilon_subset${subset_id}.cram ptt${sample}_hiasm_ref_pilon_subset${subset_id}.bam; samtools index -@ ${nthread} ptt${sample}_hiasm_ref_pilon_subset${subset_id}.cram; ls -l *.bam *.cram"
 #
 cd ${wd}/
 #
