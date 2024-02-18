@@ -147,7 +147,6 @@ for sample in A B C D E F G H I J O; do
 done
 
 # step 7. identify allelic contigs, see https://github.com/tangerzhang/ALLHiC/wiki/ALLHiC:-identify-allelic-contigs
-#         see here for pre-process of gff and cds files: /Potato_single_cells/reference_DH_line_2020/reference_sequence/protein_sequences/separation_to_lgs_for_multicultivar_analysis.sh
           # step 1: ~5 mins
           # step 2: note: ~30 mins
           #         1) target.genome is the contig level of polyploid genome assembly
@@ -163,7 +162,7 @@ done
 #
 wd=/your/path//a3_hic_alignment/bgi_deep_seq/
 cd ${wd}
-ln -s /biodata/dep_mercier/grp_schneeberger/projects/methods/src_shq/z_GameteBinning_potato_multivar/src_bash_scripts/gmap.sh ln_gmap.sh
+ln -s /path/to/src_bash_scripts/gmap.sh ln_gmap.sh
 for sample in A B C D E F G H I J O; do
     for lg in chr01 chr02 chr03 chr04 chr05 chr06 chr07 chr08 chr09 chr10 chr11 chr12; do
         wd=/your/path//a3_hic_alignment/bgi_deep_seq/
@@ -175,8 +174,8 @@ for sample in A B C D E F G H I J O; do
         cd z_allelic_map_${lg}
         #
         genome=../../lg_wise_contigs/clipped4_${sample}_${lg}.fa
-        ref_cds=../../../../../../../../Potato_single_cells/reference_DH_line_2020/reference_sequence/protein_sequences/DM_gene_models_cdna_${lg}.fa
-        chr_gff=../../../../../../../../Potato_single_cells/reference_DH_line_2020/reference_sequence/protein_sequences/DM_gene_models_${lg}.gff3
+        ref_cds=../../../../../../../../path/to/reference_DH_line_2020/reference_sequence/protein_sequences/DM_gene_models_cdna_${lg}.fa
+        chr_gff=../../../../../../../../path/to/reference_DH_line_2020/reference_sequence/protein_sequences/DM_gene_models_${lg}.gff3
         nthread=8
         # this will generate Allele.ctg.table in three steps wrapped in ln_gmap.sh
         bsub -o ln_gmap.log -e ln_gmap.err -q normal -R "rusage[mem=10000]" -R "span[hosts=1]" -M 10000 "../../../../ln_gmap.sh ${genome} ${ref_cds} ${chr_gff} ${nthread}"
@@ -202,8 +201,7 @@ for sample in A B C D E F G H I J O; do
         #
         allele_table=../z_allelic_map_${lg}/Allele.ctg.table
         bam=../align_${lg}/${sample}_${lg}_L123_bwa_aln_clean.bam
-        bsub -o ALLHiC_prune.log -e ALLHiC_prune.err -q normal -R "rusage[mem=1000]" -R "span[hosts=1]" -M 1000 "/netscratch/dep_mercier/grp_schneeberger/bin/ALLHiC_dev/ALLHiC_components/Prune/ALLHiC_prune -i ${allele_table} -b ${bam}"
-        #/netscratch/dep_mercier/grp_schneeberger/bin/ALLHiC_dev/ALLHiC_components/Prune/ALLHiC_prune -i ${allele_table} -b ${bam} &>ALLHiC_prune.log&
+        bsub -o ALLHiC_prune.log -e ALLHiC_prune.err -q normal -R "rusage[mem=1000]" -R "span[hosts=1]" -M 1000 "ALLHiC_prune -i ${allele_table} -b ${bam}"
         #
         cd ..
     done
@@ -400,7 +398,6 @@ for sample in A B C D E F G H I J O; do
             mkdir zasm_homLG_${lg}_LG_${real_hapi}
             cd zasm_homLG_${lg}_LG_${real_hapi}
             #
-            ln -s /netscratch/dep_mercier/grp_schneeberger/projects/Method/gamete_binning_book_chapter_v9_ms/software/bin/hifiasm hifiasm
             hifi=../hifi_lgs_window_marker_separated_reads/homLG_${lg}_LG_${real_hapi}_reads.fa.gz
             ll ${hifi}
             # hifiasm v0p7, with fewer redundant unitigs and higher N50 (than version 0.16) - finally used 20220921
@@ -416,7 +413,7 @@ done
 # step 15. get assembly statistics
            # cat homLG_${lg}_LG_${real_hapi}_asm.p_ctg.gfa | grep '^S' | cut -f2,3 | awk '{print ">"$1"\n"$2}' > homLG_${lg}_LG_${real_hapi}_asm.p_ctg.fasta
            # fasta_length homLG_${lg}_LG_${real_hapi}_asm.p_ctg.fasta | grep '>' | sed 's/>//g' > homLG_${lg}_LG_${real_hapi}_asm.p_ctg.ctgsizes
-           # /srv/netscratch/dep_mercier/grp_schneeberger/projects/mutation_tree/Apricot/bin/GitHub-schneeberger-group-jac/toolbox/Analysis/Assembly/calc_CN50.pl homLG_${lg}_LG_${real_hapi}_asm.p_ctg.fasta 110000000 1 &> homLG_${lg}_LG_${real_hapi}_asm.p_ctg.N50.calc.result.txt&
+           # /path/to/GitHub-schneeberger-group-jac/toolbox/Analysis/Assembly/calc_CN50.pl homLG_${lg}_LG_${real_hapi}_asm.p_ctg.fasta 110000000 1 &> homLG_${lg}_LG_${real_hapi}_asm.p_ctg.N50.calc.result.txt&
 
 wd=/your/path//a3_hic_alignment/bgi_deep_seq/
 cd ${wd}
@@ -437,7 +434,7 @@ for sample in A B C D E F G H I J O; do
             real_hapi=$(((chri-1)*4+hapi))
             cd zasm_homLG_${lg}_LG_${real_hapi}
             # Get Assembly stats
-            bsub -m "hpc001 hpc002 hpc003 hpc004 hpc005 hpc006" -q short -R "rusage[mem=2000]" -M 4000 -o get_stats.log -e get_stats.err "cat homLG_${lg}_LG_${real_hapi}_asm.p_ctg.gfa | grep '^S' | cut -f2,3 | awk '{print \">\"\$1\"\\n\"\$2}' > homLG_${lg}_LG_${real_hapi}_asm.p_ctg.fasta; fasta_length homLG_${lg}_LG_${real_hapi}_asm.p_ctg.fasta | grep '>' | sed 's/>//g' > homLG_${lg}_LG_${real_hapi}_asm.p_ctg.ctgsizes; /srv/netscratch/dep_mercier/grp_schneeberger/projects/mutation_tree/Apricot/bin/GitHub-schneeberger-group-jac/toolbox/Analysis/Assembly/calc_CN50.pl homLG_${lg}_LG_${real_hapi}_asm.p_ctg.fasta 110000000 1 > homLG_${lg}_LG_${real_hapi}_asm.p_ctg.N50.calc.result.txt"
+            bsub -m "hpc001 hpc002 hpc003 hpc004 hpc005 hpc006" -q short -R "rusage[mem=2000]" -M 4000 -o get_stats.log -e get_stats.err "cat homLG_${lg}_LG_${real_hapi}_asm.p_ctg.gfa | grep '^S' | cut -f2,3 | awk '{print \">\"\$1\"\\n\"\$2}' > homLG_${lg}_LG_${real_hapi}_asm.p_ctg.fasta; fasta_length homLG_${lg}_LG_${real_hapi}_asm.p_ctg.fasta | grep '>' | sed 's/>//g' > homLG_${lg}_LG_${real_hapi}_asm.p_ctg.ctgsizes; /path/to/GitHub-schneeberger-group-jac/toolbox/Analysis/Assembly/calc_CN50.pl homLG_${lg}_LG_${real_hapi}_asm.p_ctg.fasta 110000000 1 > homLG_${lg}_LG_${real_hapi}_asm.p_ctg.N50.calc.result.txt"
             #
             cd ..
         done
@@ -453,48 +450,3 @@ done
 #                               a6p3_lg_wise_scaffolding_correction_with_alignment_to_DM_ref.sh
 #                               a6p4_lg_wise_2nd_scaffolding_omnic.sh
 #                               a6p5_lg_wise_scaffolding_alignment_to_DM_ref_and_visualization.sh
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# get number of hic reads
-
-cd /your/path//a3_hic_alignment/bgi_deep_seq
-
->hic_read_number.txt
-for sample in A B C D E F G H I J O; do
-   grep 'reads; of these:' hic_${sample}/bwa_align/bowtie2.err | sed "s/reads; of these:/${sample}/g" >> hic_read_number.txt
-done
-
-cd /Users/sun/Desktop/z_10potato_project/xjtu_a3_hic_alignment
-scp sun@dell-node-1.mpipz.mpg.de:/your/path//a3_hic_alignment/bgi_deep_seq/hic_read_number.txt ./
