@@ -39,11 +39,11 @@ for sample in A B; do
    #
    cd ./fastq
    #
-   readpath=/biodata/dep_mercier/grp_schneeberger/reads/Potato/multi_cultivars_2021/4_10_Cultivars_OmniC/reads/
+   readpath=/path/to/reads/
    #
-   R1=$(ls /biodata/dep_mercier/grp_schneeberger/reads/Potato/multi_cultivars_2021/4_10_Cultivars_OmniC/reads/*/5424_${sample}_*R1*.fastq.gz)
+   R1=$(ls /path/to/reads/*/5424_${sample}_*R1*.fastq.gz)
    cat ${R1} > ${sample}_R1_mpgc.fastq.gz
-   R2=$(ls /biodata/dep_mercier/grp_schneeberger/reads/Potato/multi_cultivars_2021/4_10_Cultivars_OmniC/reads/*/5424_${sample}_*R2*.fastq.gz)
+   R2=$(ls /path/to/reads/*/5424_${sample}_*R2*.fastq.gz)
    cat ${R2} > ${sample}_R2_mpgc.fastq.gz   
    #
    cd ../chrsizes
