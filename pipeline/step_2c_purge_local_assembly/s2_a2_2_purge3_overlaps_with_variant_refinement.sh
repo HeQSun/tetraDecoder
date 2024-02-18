@@ -43,7 +43,7 @@ cd ${wd}
 done
 
 # 1.2 merge illumina sub-vcfs for each sample and find raw illumina SNPs
-#     result of raw illumina SNPs -- tool SHOREmap used: /srv/netscratch/dep_mercier/grp_schneeberger/bin/bin/SHOREmap
+#     result of raw illumina SNPs -- tool SHOREmap used: www.shoremap.org
 #	48351 A_shoremap_converted/1_converted_variant.txt
 #	36144 B_shoremap_converted/1_converted_variant.txt
 #	40718 C_shoremap_converted/1_converted_variant.txt
@@ -70,7 +70,7 @@ cd DNB_align
 cd variant_call_sc
 #
 cat clipped*split*.vcf | grep -E -v '#|INDEL' > z_merged_clipped2_${sample}_interval.vcf
-/srv/netscratch/dep_mercier/grp_schneeberger/bin/bin/SHOREmap convert --marker z_merged_clipped2_${sample}_interval.vcf --folder ${sample}_shoremap_converted --indel-size 0 --min-AF 0.01 -no-c -no-r > SHOREmap_convert.log
+SHOREmap convert --marker z_merged_clipped2_${sample}_interval.vcf --folder ${sample}_shoremap_converted --indel-size 0 --min-AF 0.01 -no-c -no-r > SHOREmap_convert.log
 wc -l ${sample}_shoremap_converted/*.txt
 #
 wd=/your/working/path/
@@ -240,14 +240,14 @@ marker=../subset2_illu_re_align_purge_ovl/HIFI_align/variant_call_sc/z_merged_cl
 gap_size=20000 # bp
 cram=../subset2_illu_re_align_purge_ovl/HIFI_align/ptt${sample}_hiasm_ref_pilon_subset2.cram
 # run this first; 1 second each
-/biodata/dep_mercier/grp_schneeberger/projects/methods/src_shq/z_GameteBinning_potato_multivar/dev_bin//snp_interval_finder ${marker} ${gap_size} ${sample}_var; awk '$2>=10' ${sample}_var_snp_clusters.txt | sed 's/:/\t/g' | cut -f1 | sort | uniq > contigs_with_var_for_local_asm.list
+/path/to/dev_bin/snp_interval_finder ${marker} ${gap_size} ${sample}_var; awk '$2>=10' ${sample}_var_snp_clusters.txt | sed 's/:/\t/g' | cut -f1 | sort | uniq > contigs_with_var_for_local_asm.list
 #
 mkdir z1_local_read_extract
 cd z1_local_read_extract
 # 4.1 prepare commands
 ctg_cnt=0
 >${sample}_bam_extracter_all.sh
-while read ctg; do echo "$((ctg_cnt=ctg_cnt+1)): ${sample}-${ctg}"; echo "samtools view ../${cram} ${ctg} | /biodata/dep_mercier/grp_schneeberger/projects/methods/src_shq/z_GameteBinning_potato_multivar/dev_bin//bam_extracter ../${marker} ${ctg}_local_hifi - > bam_extracter_${ctg}.log; gzip ${ctg}_local_hifi_extracted_reads.fq" >> ${sample}_bam_extracter_all.sh; done < ../contigs_with_var_for_local_asm.list
+while read ctg; do echo "$((ctg_cnt=ctg_cnt+1)): ${sample}-${ctg}"; echo "samtools view ../${cram} ${ctg} | /path/to/dev_bin//bam_extracter ../${marker} ${ctg}_local_hifi - > bam_extracter_${ctg}.log; gzip ${ctg}_local_hifi_extracted_reads.fq" >> ${sample}_bam_extracter_all.sh; done < ../contigs_with_var_for_local_asm.list
 # 4.2 split cmds and submit
 split -l 100 ${sample}_bam_extracter_all.sh ${sample}_bam_extracter_sub
 for si in ${sample}_bam_extracter_sub*; do mv ${si} ${si}.sh; bsub -q normal -R "span[hosts=1] rusage[mem=6000]" -o bam_extracter.log -e bam_extracter.err "bash ./${si}.sh"; done
