@@ -1,5 +1,4 @@
 path <-"/your/working/path/"
-#path <- "/netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/a1_HiFi_stats/"
 
 for (sample in  LETTERS[8])
 {
