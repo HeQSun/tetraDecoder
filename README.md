@@ -1,14 +1,19 @@
 tetraDecoder
 =
-Here we introduce the pipeline for phasing tetraploid genomes, i.e., using long read sequencing and HiC to achieve chromosome-level and haplotype-resolved genome assembly. This is to support the analysis in [Sun_and_Tusso_et_al_2024].
+Here we introduce the pipeline for achieving haplotype-resolved, chromosome-level genome assembly of tetraploids using long read sequencing and HiC sequencing. This is to support the analysis in [Sun_and_Tusso_et_al_2024].
 
 Pipeline of assembly
 =
 
-Befrore running the pipeline, install necessary customized tools.
+Befrore running the pipeline, install necessary customized tools, by
+
+cd /your/path/to/install/tetraDecoder/
+git clone https://USER-GITHUB-ACCOUNT:USER-TOKEN@github.com/HeQSun/tetraDecoder, where SER-GITHUB-ACCOUNT and USER-TOKEN need to be updated according to your own settings.
+
+# then
 
 for si in src*/; do cd $si; make ; cd .. ; done
 
-Then, check folder [pipeline](https://github.com/HeQSun/tetraDecoder/tree/main/pipeline)
+To start the process, check the [pipeline](https://github.com/HeQSun/tetraDecoder/tree/main/pipeline)
 
-In the pipeline, there are tools like hifiasm, bowtie2 etc required, which are all publicly available. Please also install following their specific instructions.
+Note, in the pipeline, there are tools like hifiasm, bowtie2 etc required, which are all publicly available. Please install following their instructions.
