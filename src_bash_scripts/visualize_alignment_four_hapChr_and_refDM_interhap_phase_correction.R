@@ -96,7 +96,7 @@ if(length(args) < 5) {
   # hapstr="1,2,3,4"
   # strand="_fw" # or "_rev"
   # aln_file="fw_data"
-  # path<-"/netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/a6_lg_wise_scaffolding/scaf_A/s_read_realign_chr01"
+  # path<-"/path/to/a6_lg_wise_scaffolding/scaf_A/s_read_realign_chr01"
   # out_prefix="A_chr01"
 
     ####################################################################################################################
