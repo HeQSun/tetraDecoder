@@ -76,7 +76,7 @@ if(length(args) < 5) {
   # cultivar="A"
   # lg="chr01_hap1"
   # aln_file="fw_data"
-  # path<-"/netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/a6_lg_wise_scaffolding/scaf_A/s_read_realign_chr01/juicebox_correction_1/zcorrection_1_refDM/"  
+  # path<-"/path/to/a6_lg_wise_scaffolding/scaf_A/s_read_realign_chr01/juicebox_correction_1/zcorrection_1_refDM/"  
   # out_prefix="fw_aln_hap1_against_DMchr01"
   ################ output pdf file ###########################################  
   pdf(paste(path, "/",out_prefix,".pdf", sep=""), family="Helvetica", height=2.5, width=7.08)
