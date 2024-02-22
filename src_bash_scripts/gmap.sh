@@ -11,10 +11,6 @@ genome=$1
 ref_cds=$2
 chr_gff=$3
 nthread=$4
-# genome=../../lg_wise_contigs/clipped4_${sample}_${lg}.fa
-# ref_cds=../../../../../../../../Potato_single_cells/reference_DH_line_2020/reference_sequence/protein_sequences/DM_gene_models_cdna_${lg}.fa
-# nthread=8
-# chr_gff=../../../../../../../../Potato_single_cells/reference_DH_line_2020/reference_sequence/protein_sequences/DM_gene_models_${lg}.gff3
 
 # step 1: ~5 mins
 gmap_build -D . -d DB ${genome} >gmap_build.log
@@ -37,5 +33,5 @@ sed -i 's/DM_gene_models_cdna_chr/DM_models_cdna_chr/g' gmap.gff3 # flag "gene" 
 cut -f1,4,5,9 ${chr_gff} | sed 's/=/\t/g' | sed 's/;/\t/g' | cut -f 1,2,3,5 > ref.bed
 # caution: I updated gmap2AlleleTableBED2 to get the expected info: chr pos ctg1[ ctg2 ctg3 ctg4]
 # gmap.gff3 generated above is a hardcoded input of gmap2AlleleTableBED2.pl
-perl /netscratch/dep_mercier/grp_schneeberger/bin/ALLHiC/scripts/gmap2AlleleTableBED2.pl ref.bed >gmap2AlleleTableBED2.log
+perl /path/to/ALLHiC/scripts/gmap2AlleleTableBED2.pl ref.bed >gmap2AlleleTableBED2.log
 #
