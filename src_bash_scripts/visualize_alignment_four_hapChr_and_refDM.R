@@ -83,7 +83,7 @@ if(length(args) < 7) {
   # hapstr="1,2,3,4"
   # strand="_fw" # or "_rev"
   # aln_file="fw_data"
-  # path<-"/netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/a6_lg_wise_scaffolding/scaf_A/s_read_realign_chr01"
+  # path<-"/path/to/a6_lg_wise_scaffolding/scaf_A/s_read_realign_chr01"
   # out_prefix="A_chr01"
   ################ output pdf file ###########################################
   pdf(paste(path,"/",out_prefix,"_strand_selection_with_ref_DM.pdf", sep=""), family="Helvetica", height=5, width=7.08*2)
