@@ -29,4 +29,4 @@ done < ../../../homLG_${lg}_LG_${real_hapi}_LessThan350kb.ctgids # to confirm di
 # get and plot organelle-hitting contigs
 egrep 'chlor|mito|pla' all_LessThan350kb_blast_top1_stat.txt | sed 's/           //g' > all_LessThan350kb_blast_top1_stat_subset_organelle.txt
 # work_path="./"
-Rscript /biodata/dep_mercier/grp_schneeberger/projects/methods/src_shq/z_GameteBinning_potato_multivar/src_bash_scripts/viz_blast_ratio.R all_LessThan350kb_blast_top1_stat_subset_organelle.txt ${work_path} homLG_${lg}_LG_${real_hapi}
+Rscript /path/to/src_bash_scripts/viz_blast_ratio.R all_LessThan350kb_blast_top1_stat_subset_organelle.txt ${work_path} homLG_${lg}_LG_${real_hapi}
