@@ -9,7 +9,9 @@ Befrore running the pipeline, install necessary customized tools, by
 
 cd /your/path/to/install/tetraDecoder/
 
-git clone https://USER-GITHUB-ACCOUNT:USER-TOKEN@github.com/HeQSun/tetraDecoder, where SER-GITHUB-ACCOUNT and USER-TOKEN need to be updated according to your own settings.
+git clone https://USER-GITHUB-ACCOUNT:USER-TOKEN@github.com/HeQSun/tetraDecoder
+
+where SER-GITHUB-ACCOUNT and USER-TOKEN need to be updated according to your own settings.
 
 then
 
