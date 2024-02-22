@@ -14,11 +14,10 @@ if(length(args) < 4) {
   lg        = args[[2]]
   real_hapi = args[[3]]  
   path      = args[[4]]
-  #setwd("/netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/zaux_ragoo/ragoo_D/hap_1/")
   setwd(path)
   #
   # given
-  assembly<-read.table(paste("/netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/a6_lg_wise_scaffolding/scaf_",sample,"/s_read_realign_",lg,"/zcorrection_four_hap_juicebox_DM_strand_interhap_correction/updated/groups.asm.hap",real_hapi,"_strand_raw.review.oneseq.updated.assembly.ctg.info.only", sep=""))
+  assembly<-read.table(paste("/path/to/a6_lg_wise_scaffolding/scaf_",sample,"/s_read_realign_",lg,"/zcorrection_four_hap_juicebox_DM_strand_interhap_correction/updated/groups.asm.hap",real_hapi,"_strand_raw.review.oneseq.updated.assembly.ctg.info.only", sep=""))
   # ragoo
   ragoo_out<-read.table(paste(path, "/ragoo_output/orderings/",lg,"_orderings.txt", sep=""))
   ragoo_out_new <- as.data.frame(ragoo_out)
