@@ -104,15 +104,14 @@ if(length(args) < 5) {
     haps <- strsplit(hapstr, ',')
     haps <- as.vector(haps[[1]])
     #
-    #### cov <- read.table(paste("/Users/sun/Desktop/z_10potato_project/xjtu_a9_find_regions_not_assembled/src_find_gaps/data/s_read_realign_chr01/cnv_winsize50000_step50000_hq.txt",sep=""))
-    cov <- read.table(paste("/netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/a8_make_full_genome_tmp/v5th_tmp_full_", cultivar,"/shallow_DNB_aln/cnv_winsize50000_step50000_hq.txt", sep=""))
+    cov <- read.table(paste("/path/to/a8_make_full_genome_tmp/v5th_tmp_full_", cultivar,"/shallow_DNB_aln/cnv_winsize50000_step50000_hq.txt", sep=""))
   # example input
   # cultivar="A"
   # lg="chr01"
   # hapstr="1,2,3,4"
   # strand="_fw" # or "_rev"
   # aln_file="fw_data"
-  # path<-"/netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/a6_lg_wise_scaffolding/scaf_A/s_read_realign_chr01"
+  # path<-"/path/to/a6_lg_wise_scaffolding/scaf_A/s_read_realign_chr01"
   # out_prefix="A_chr01"
 
     ####################################################################################################################
@@ -161,12 +160,3 @@ if(length(args) < 5) {
   #
   dev.off()
 }
-
-
-
-
-
-
-
-
-
