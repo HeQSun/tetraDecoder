@@ -49,6 +49,7 @@
 #include       <assert.h>
 #include         <math.h>
 #include       <dirent.h>
+#include         <cerrno> // Include the errno header file
 #include "split_string.h"
 #include "group_refinement.h"
 using namespace std;
