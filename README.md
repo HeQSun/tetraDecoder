@@ -21,11 +21,15 @@ then
 
 cd src_gb_stage4_short_read_separation/gzlib
 
+make clean
+
 make
 
 cd ../../
 
 cd src_gb_stage4_short_read_separation_chr/gzlib
+
+make clean
 
 make
 
