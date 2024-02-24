@@ -11,13 +11,25 @@ cd /your/path/to/install/tetraDecoder/
 
 git clone https://USER-GITHUB-ACCOUNT:USER-TOKEN@github.com/HeQSun/tetraDecoder
 
+where SER-GITHUB-ACCOUNT and USER-TOKEN need to be updated according to your own settings.
+
 or
 
 git clone https://github.com/HeQSun/tetraDecoder.git
 
-where SER-GITHUB-ACCOUNT and USER-TOKEN need to be updated according to your own settings.
-
 then
+
+cd src_gb_stage4_short_read_separation/gzlib
+
+make
+
+cd ../../
+
+cd src_gb_stage4_short_read_separation_chr/gzlib
+
+make
+
+cd ../../
 
 for si in src*/; do cd $si; make ; cd .. ; done
 
