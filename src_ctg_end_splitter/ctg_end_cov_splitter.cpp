@@ -260,8 +260,8 @@ bool find_cliping_site(string covfile, int min_cov, map<string, map<unsigned lon
             }
             // cout << "        : ctg " << last_ctg << " needs to split [" << clip_left_sta << ", " << clip_left_end << "] from left end." << endl;
             // case 2. right end of the contig
-            auto r_witr     = ctg_win_order.rbegin();
-            auto r_witr_end = ctg_win_order.rend();
+            vector<string>::iterator r_witr     = ctg_win_order.rbegin();
+            vector<string>::iterator r_witr_end = ctg_win_order.rend();
             win_low_cov = true;
             unsigned long clip_right_sta = last_ctg_siz;
             unsigned long clip_right_end = last_ctg_siz;
@@ -349,8 +349,8 @@ bool find_cliping_site(string covfile, int min_cov, map<string, map<unsigned lon
     }
     // cout << "        : ctg " << last_ctg << " needs to split [" << clip_left_sta << ", " << clip_left_end << "] from left end." << endl;
     // case 2. right end of the contig
-    auto r_witr     = ctg_win_order.rbegin();
-    auto r_witr_end = ctg_win_order.rend();
+    vector<string>::iterator r_witr     = ctg_win_order.rbegin();
+    vector<string>::iterator r_witr_end = ctg_win_order.rend();
     win_low_cov = true;
     unsigned long clip_right_sta = last_ctg_siz;
     unsigned long clip_right_end = last_ctg_siz;
