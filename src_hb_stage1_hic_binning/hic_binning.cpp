@@ -2276,7 +2276,7 @@ bool get_clusters(map<string, int> vertex,
     int N_cluster = 4;    
     if((*cluster_edge).size() != N_cluster)
     {
-        string hic_sum_file = out_folder + "/s8_grouping_window_markers_refined_1st_group_hic_stats.txt\0"; 
+        string hic_sum_file = tmpfolder + "/s8_grouping_window_markers_refined_1st_group_hic_stats.txt\0"; 
         ofstream ofp;
         ofp.open(hic_sum_file.c_str(), ios::out);
         if(!ofp.good())
