@@ -11,6 +11,10 @@ cd /your/path/to/install/tetraDecoder/
 
 git clone https://USER-GITHUB-ACCOUNT:USER-TOKEN@github.com/HeQSun/tetraDecoder
 
+or
+
+git clone https://github.com/HeQSun/tetraDecoder.git
+
 where SER-GITHUB-ACCOUNT and USER-TOKEN need to be updated according to your own settings.
 
 then
