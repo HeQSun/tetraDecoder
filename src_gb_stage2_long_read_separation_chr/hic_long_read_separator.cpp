@@ -25,6 +25,7 @@
 #include    <dirent.h>
 #include    <unistd.h>
 #include "split_string.h"
+#include <cerrno> // Include the errno header file
 using namespace std;
 // window marker
 struct winMARKER
