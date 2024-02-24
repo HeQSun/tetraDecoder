@@ -22,6 +22,7 @@
 #include  <sys/stat.h>
 #include    <dirent.h>
 #include    <unistd.h>
+#include      <cerrno> // Include the errno header file
 #include "split_string.h"
 #include   "./gzlib/gzstream.h"
 using namespace std;
