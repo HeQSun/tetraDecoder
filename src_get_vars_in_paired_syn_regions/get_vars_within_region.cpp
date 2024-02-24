@@ -21,6 +21,7 @@
 #include     <sys/stat.h>
 #include       <dirent.h>
 #include      <algorithm>
+#include         <cerrno> // Include the errno header file
 #include "split_string.h"
 //
 using namespace std;
