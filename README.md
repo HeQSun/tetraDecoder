@@ -5,31 +5,7 @@ Here we introduce the pipeline for achieving haplotype-resolved, chromosome-leve
 Pipeline of assembly
 =
 
-Befrore running the pipeline, install necessary customized tools, by
-
-cd /your/path/to/install/tetraDecoder/
-
-git clone https://github.com/HeQSun/tetraDecoder.git
-
-then
-
-cd src_gb_stage4_short_read_separation/gzlib
-
-make clean
-
-make
-
-cd ../../
-
-cd src_gb_stage4_short_read_separation_chr/gzlib
-
-make clean
-
-make
-
-cd ../../
-
-for si in src*/; do cd $si; make ; cd .. ; done
+Befrore running the pipeline, install necessary customized tools, check INSTALL.
 
 To start the process, check the [pipeline](https://github.com/HeQSun/tetraDecoder/tree/main/pipeline)
 
