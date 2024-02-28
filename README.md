@@ -5,7 +5,7 @@ Here we introduce the pipeline for achieving haplotype-resolved, chromosome-leve
 Pipeline of assembly
 =
 
-Befrore running the pipeline, install necessary customized tools, check INSTALL.
+Befrore running the pipeline, install necessary customized tools, check [INSTALL](https://github.com/HeQSun/tetraDecoder/blob/main/INSTALL).
 
 To start the process, check the [pipeline](https://github.com/HeQSun/tetraDecoder/tree/main/pipeline)
 
