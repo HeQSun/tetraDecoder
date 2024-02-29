@@ -26,9 +26,9 @@ Pipeline
     read_path=/your/work/directory/reads/
     cd ${read_path}
 
-##### PacBio HiFi:
+##### PacBio HiFi [download](https://www.ncbi.nlm.nih.gov/sra/SRX11512735[accn])
 
-    ls -l 4396_A_CCS.fastq [download](https://www.ncbi.nlm.nih.gov/sra/SRX11512735[accn])
+    ls -l 4396_A_CCS.fastq
 
 ##### Hi-C reads, with 3 raw subsets for 'Otava' (sample 'O'):
 
