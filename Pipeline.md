@@ -1,10 +1,10 @@
 Pipeline
 =
-This is the pipeline explaining how Hi-C based haplotyping in tetraploid (potato) works. Intermediate data (for running hic_binning) are provided [here](https://mega.nz/folder/OhkkyDDQ#cb5j-u8BxyCIfxQ-rBAkfQ), if you want to have a test run.
+##### This is the pipeline explaining how Hi-C based haplotyping in tetraploid (potato) works. Intermediate data (for running hic_binning) are provided [here](https://mega.nz/folder/OhkkyDDQ#cb5j-u8BxyCIfxQ-rBAkfQ), if you want to have a test run.
 
-Note: zlib.h is required by some tools (for the purpose of zipping files), please install accordingly.
+##### Note: zlib.h is required by some tools (for the purpose of zipping files), please install accordingly.
 
-Publicly available tools need to be installed:
+##### Publicly available tools need to be installed:
 
 * [samtools 1.9](https://github.com/samtools/)
 * [bowtie2 2.2.8](https://github.com/BenLangmead/bowtie2)
@@ -13,11 +13,11 @@ Publicly available tools need to be installed:
 * [ALLHiC](https://github.com/tangerzhang/ALLHiC)
 * [ALLHiC-dev](https://github.com/sc-zhang/ALLHiC_components)
 
-Developed tools in this work (Check [INSTALL](https://github.com/HeQSun/tetraDecoder/blob/main/INSTALL) for installation).
+##### Developed tools in this work (Check [INSTALL](https://github.com/HeQSun/tetraDecoder/blob/main/INSTALL) for installation).
 
-Besides,
+##### Besides,
 
-* Basic tools awk and sed etc should be installed.
+##### Basic tools awk and sed etc should be installed.
 
 ##### Step.0 Prepare data
 
@@ -26,18 +26,18 @@ Besides,
     read_path=/your/work/directory/reads/
     cd ${read_path}
 
-PacBio HiFi:
+##### PacBio HiFi:
 
     ls -l 4396_A_CCS.fastq [download](https://www.ncbi.nlm.nih.gov/sra/SRX11512735[accn])
 
-Hi-C reads, with 3 raw subsets for 'Otava' (sample 'O'):
+##### Hi-C reads, with 3 raw subsets for 'Otava' (sample 'O'):
 
-    O_L1_1.fq.gz
-    O_L1_2.fq.gz
-    O_L2_1.fq.gz
-    O_L2_2.fq.gz
-    O_L3_1.fq.gz
-    O_L3_2.fq.gz
+    ls -l O_L1_1.fq.gz
+    ls -l O_L1_2.fq.gz
+    ls -l O_L2_1.fq.gz
+    ls -l O_L2_2.fq.gz
+    ls -l O_L3_1.fq.gz
+    ls -l O_L3_2.fq.gz
 
 ##### step 0.2. prepare DM v6p1 reference data
 
