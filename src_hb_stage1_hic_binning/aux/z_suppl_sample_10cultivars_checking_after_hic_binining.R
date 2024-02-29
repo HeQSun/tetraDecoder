@@ -40,11 +40,11 @@ find_min <- function(data_chr)
   return(min_case)
 }
 #
-binning_path <- "/netscratch/dep_mercier/grp_schneeberger/projects/Potato_multipleCultivars/s2_10_Cultivars_PacBio_HiFi/a3_hic_alignment/bgi_deep_seq/"
+binning_path <- "/work/path/"
 setwd(binning_path)
 #
 #for (sample in LETTERS[c(1:10)])
-for(sample in c("J"))
+for(sample in c("O"))
 {
   data <- read.table(paste(binning_path, "/hic_",sample,"/bwa_align/lg_wise_contigs_read_align/interdiate_res_sample_",sample,"_hic_binining_marker_size_reformat.txt", sep=""))
   #
