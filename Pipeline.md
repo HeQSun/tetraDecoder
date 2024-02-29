@@ -21,7 +21,7 @@ Besides,
 
 ##### Step.0 Prepare data
 
-step 0.1. prepare sequencing data of the focal genome. All data are from a tetraploid (potato cultivar) of interest, including PacBio HiFi reads, Hi-C reads, Illumina reads from somatic tissues. In this example pipeline, suppose all raw sequencing data are collected in the path below.
+##### step 0.1. prepare sequencing data of the focal genome. All data are from a tetraploid (potato cultivar) of interest, including PacBio HiFi reads, Hi-C reads, Illumina reads from somatic tissues. In this example pipeline, suppose all raw sequencing data are collected in the path below.
 
     read_path=/your/work/directory/reads/
     cd ${read_path}
@@ -39,7 +39,7 @@ Hi-C reads, with 3 raw subsets for 'Otava' (sample 'O'):
     O_L3_1.fq.gz
     O_L3_2.fq.gz
 
-step 0.2. prepare DM v6p1 reference data
+##### step 0.2. prepare DM v6p1 reference data
 
     ref_seq_path=/your/work/directory/ref_dm6p1/
     cd ${ref_seq_path}
@@ -50,7 +50,7 @@ step 0.2. prepare DM v6p1 reference data
 
 ##### Step 1. index preliminary assembly - the purged assembly (with corresponding contig size information - two tab-separated columns: contig_id	contig_size) as below ([available here](https://mega.nz/folder/GktXEYCR#F3I8uTKvKO0Fu8VY2yc2WA))
 
-step 1.1
+##### step 1.1
     asm_seq_path=/your/work/directory/assembly/
     cd ${asm_seq_path}
     sample="O"
@@ -60,7 +60,7 @@ step 1.1
     samtools faidx clipped4_${sample}_hifiasm.p_utg.gfa.fa
     bowtie2-build --threads 8 clipped4_${sample}_hifiasm.p_utg.gfa.fa clipped4_${sample}_hifiasm.p_utg.gfa.fa
 
-step 1.2 align HiFi reads to the contigs
+##### step 1.2 align HiFi reads to the contigs
 
     sample=O
     genome=clipped4_${sample}_hifiasm.p_utg.gfa.fa
@@ -82,7 +82,7 @@ step 1.2 align HiFi reads to the contigs
     cd ${wd}
     mkdir a4_alignment_based_linkage_grouping
 
-step 3.1. alignment using DM as reference
+##### step 3.1. alignment using DM as reference
 
     for sample in O; do
         group_lg_path=/your/work/directory/a4_alignment_based_linkage_grouping/
@@ -96,7 +96,7 @@ step 3.1. alignment using DM as reference
         cd ${wd}
     done
 
-step 3.2. separate alignment to linkage group => DM_based.log
+##### step 3.2. separate alignment to linkage group => DM_based.log
 
     for sample in O; do
         group_lg_path=/your/work/directory/a4_alignment_based_linkage_grouping/
@@ -105,7 +105,7 @@ step 3.2. separate alignment to linkage group => DM_based.log
         ref_linkage_grouper ${sample}_against_dm.paf /your/work/directory/ref_dm6p1/DM_1-3_516_R44_potato_genome_assembly.v6.1_main12.chrids > DM_based.log
     done
 
-step 3.3. get grouping details and summary
+##### step 3.3. get grouping details and summary
 
     for sample in O; do
         group_lg_path=/your/work/directory/a4_alignment_based_linkage_grouping/
@@ -115,7 +115,7 @@ step 3.3. get grouping details and summary
         grep 'final' DM_based.log | sed 's/   //g' > dm_res_total_group_size_${sample}.txt
     done
 
-step 3.4. get chr-wise group of contigs for omni-c read extraction - this is for omnic_read_extracter => dm_res_grouping_details_${sample}_${lg}.txt
+##### step 3.4. get chr-wise group of contigs for omni-c read extraction - this is for omnic_read_extracter => dm_res_grouping_details_${sample}_${lg}.txt
 
     for sample in O; do
        group_lg_path=/your/work/directory/a4_alignment_based_linkage_grouping/
@@ -130,7 +130,7 @@ step 3.4. get chr-wise group of contigs for omni-c read extraction - this is for
 
 ##### step 4. Hi-C read alignment to ungrouped contigs, and extract to lg-groups
 
-step 4.1. align hi-c reads to the ungrouped contigs
+##### step 4.1. align hi-c reads to the ungrouped contigs
 
     cd /your/work/directory/
     mkdir a3_hic_alignment
@@ -155,7 +155,7 @@ step 4.1. align hi-c reads to the ungrouped contigs
        done
     done
 
-step 4.2. extract reads to ref-lg-grouped contigs
+##### step 4.2. extract reads to ref-lg-grouped contigs
 
     cd /your/work/directory/a3_hic_alignment
 
@@ -175,7 +175,7 @@ step 4.2. extract reads to ref-lg-grouped contigs
        done
     done
 
-step 4.3. extract paired-end hic reads to fastqs to assigned to each linkage group.
+##### step 4.3. extract paired-end hic reads to fastqs to assigned to each linkage group.
 
     cd /your/work/directory/a3_hic_alignment
 
@@ -193,7 +193,7 @@ step 4.3. extract paired-end hic reads to fastqs to assigned to each linkage gro
 
 ##### step 5. Hi-C read alignment to each lg
 
-step 5.1. extract lg-wise assigned contigs (based on DM reference)
+##### step 5.1. extract lg-wise assigned contigs (based on DM reference)
 
     cd /your/work/directory/a3_hic_alignment
 
@@ -214,7 +214,7 @@ step 5.1. extract lg-wise assigned contigs (based on DM reference)
        #
     done
 
-step 5.2. index lg-wise chrs for bwa
+##### step 5.2. index lg-wise chrs for bwa
 
     wd=/your/work/directory/a3_hic_alignment/
     cd ${wd}
@@ -232,7 +232,7 @@ step 5.2. index lg-wise chrs for bwa
         done
     done
 
-step 5.3. bwa align to initial assembly of 48 chrs  --- to continue!!!!!!!!!
+##### step 5.3. bwa align to initial assembly of 48 chrs  --- to continue!!!!!!!!!
 
     wd=/your/work/directory/a3_hic_alignment/
     cd ${wd}
@@ -259,7 +259,7 @@ step 5.3. bwa align to initial assembly of 48 chrs  --- to continue!!!!!!!!!
         done
     done
 
-step 5.4. merge read pairs
+##### step 5.4. merge read pairs
 
     wd=/your/work/directory/a3_hic_alignment/
     cd ${wd}
@@ -282,7 +282,7 @@ step 5.4. merge read pairs
         done
     done
 
-step 5.5. filter reads in bam
+##### step 5.5. filter reads in bam
 
     wd=/your/work/directory/a3_hic_alignment/
     cd ${wd}
@@ -305,7 +305,7 @@ step 5.5. filter reads in bam
         done
     done
 
-step 5.6. merge clean bams (if multiple subsets of Hi-C reads are aligned, here we just use the one alignment as example)
+##### step 5.6. merge clean bams (if multiple subsets of Hi-C reads are aligned, here we just use the one alignment as example)
 
     wd=/your/work/directory/a3_hic_alignment/
     cd ${wd}
@@ -328,7 +328,7 @@ step 5.6. merge clean bams (if multiple subsets of Hi-C reads are aligned, here 
         done
     done
 
-step 5.7. identify allelic contigs, see https://github.com/tangerzhang/ALLHiC/wiki/ALLHiC:-identify-allelic-contigs
+##### step 5.7. identify allelic contigs, see https://github.com/tangerzhang/ALLHiC/wiki/ALLHiC:-identify-allelic-contigs
 
     wd=/your/work/directory/a3_hic_alignment/
     cd ${wd}
@@ -352,7 +352,7 @@ step 5.7. identify allelic contigs, see https://github.com/tangerzhang/ALLHiC/wi
         done
     done
 
-step 5.8. use Allele.ctg.table to prune 1) signals that link alleles and 2) weak signals from BAM files: caution: ALLHiC_prune in the original version generatd Tb-level intermeidate files. Here is a developing version of prune used: https://github.com/sc-zhang/ALLHiC_components
+##### step 5.8. use Allele.ctg.table to prune 1) signals that link alleles and 2) weak signals from BAM files: caution: ALLHiC_prune in the original version generatd Tb-level intermeidate files. Here is a developing version of prune used: https://github.com/sc-zhang/ALLHiC_components
 
     wd=/your/work/directory/a3_hic_alignment/
     cd ${wd}
@@ -416,7 +416,7 @@ step 5.8. use Allele.ctg.table to prune 1) signals that link alleles and 2) weak
 
 ##### step 7. check the binning result
 
-step 7.1. get group-contig sizes of chromosomes => s8_grouping_window_markers_refined_1st.txt
+##### step 7.1. get group-contig sizes of chromosomes => s8_grouping_window_markers_refined_1st.txt
 
     sample="O"
     wd=/your/work/directory/a3_hic_alignment/
@@ -460,7 +460,7 @@ step 7.1. get group-contig sizes of chromosomes => s8_grouping_window_markers_re
         sed ':a;N;$!ba;s/\n/\t/g' interdiate_res_sample_${sample}_hic_binining_marker_size.txt | sed 's/chr/\nchr/g' | sed 's/_/\t/g' | grep 'chr' | awk '$9!=""' > interdiate_res_sample_${sample}_hic_binining_marker_size_reformat.txt
     done
 
-step 7.2. select the best representative phasing for each chr.
+##### step 7.2. select the best representative phasing for each chr.
 
 		# sort by allelic - smaller better (= lower chance to mis-join contigs into linkage groups)
     #		    tmp_x <- data_chr_sorted_cleaned[order(data_chr_sorted_cleaned$V5, decreasing=FALSE), ]
@@ -477,7 +477,7 @@ step 7.2. select the best representative phasing for each chr.
     # you may need to update path in the R script
     Rscript /path/to/tetraDecoder/src_hb_stage1_hic_binning/aux/z_suppl_sample_10cultivars_checking_after_hic_binining.R
 
-step 7.3. merge phased markers within different chrs as a genome-level marker set    
+##### step 7.3. merge phased markers within different chrs as a genome-level marker set    
     # caution: check max allelic ratio in best cases file must be two digits like 0.xx (, even for 0.10 or 0.20)    
     # example: lg=chr01; min_hic_contact=45; min_hic_contact_i=3.3; min_hapctg_size=200000; max_allelic_ratio=0.03
 
