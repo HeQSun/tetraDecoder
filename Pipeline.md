@@ -15,7 +15,7 @@ Pipeline
 * [gmap](http://research-pub.gene.com/gmap/src/gmap-gsnap-2012-07-20.v3.tar.gz)
 * [hifiasm 0.7](https://github.com/chhylp123/hifiasm)
 
-##### Developed tools/scripts in this work (Check [INSTALL](https://github.com/HeQSun/tetraDecoder/blob/main/INSTALL) for installation. Installation tested on x86_64 linux Ubuntu systems).
+##### Developed tools/scripts in this work (Check [INSTALL](https://github.com/HeQSun/tetraDecoder/blob/main/INSTALL) for installation. Installation tested on linux distribution "Debian GNU/Linux 9 (stretch)" with x86_64 cpu architecture).
 
     fasta_length               # calculate length of sequences in fasta format
     fasta_name_selecter        # select a subset of sequences with sequence name from a fasta file
