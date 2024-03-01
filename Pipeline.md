@@ -1,6 +1,6 @@
-Pipeline
+<font color="red">Pipeline</font>
 =
-#### This is the pipeline explaining how Hi-C based haplotyping in tetraploid (potato) works.
+#### <font color="red">This is the pipeline explaining how Hi-C based haplotyping in tetraploid (potato) works.</font>
  
 #### Publicly available tools need to be installed. Note: zlib.h is required by some tools (for the purpose of zipping files), please install accordingly：
 
