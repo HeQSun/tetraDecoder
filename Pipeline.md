@@ -15,7 +15,7 @@ Pipeline
 
 #### Developed tools/scripts in this work (Check [INSTALL](https://github.com/HeQSun/tetraDecoder/blob/main/INSTALL) for installation. Installation tested on linux distribution "Debian GNU/Linux 9 (stretch)" with x86_64 cpu architecture).
 
- * fasta_length---------------# calculate length of sequences in fasta format
+ * fasta_length----------------# calculate length of sequences in fasta format
  * fasta_name_selecter--------# select a subset of sequences with sequence name from a fasta file
  * ref_linkage_grouper--------# based on alignment of contigs to a reference genomes, separate contigs into linkage groups
  * omnic_read_extracter-------# given the groups of contigs, separate Hi-C read pairs into the groups
