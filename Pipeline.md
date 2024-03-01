@@ -6,14 +6,23 @@ Pipeline
 
 ##### Publicly available tools need to be installed:
 
+* [bwa 0.7.17](https://github.com/lh3/bwa/releases)
 * [samtools 1.9](https://github.com/samtools/)
 * [bowtie2 2.2.8](https://github.com/BenLangmead/bowtie2)
 * [minimap2 2.20-r1061](https://github.com/lh3/minimap2)
-* [hifiasm 0.7](https://github.com/chhylp123/hifiasm)
-* [ALLHiC](https://github.com/tangerzhang/ALLHiC)
+* [ALLHiC, including filterBAM_forHiC.pl](https://github.com/tangerzhang/ALLHiC)
 * [ALLHiC-dev](https://github.com/sc-zhang/ALLHiC_components)
+* [gmap](http://research-pub.gene.com/gmap/src/gmap-gsnap-2012-07-20.v3.tar.gz)
+* [hifiasm 0.7](https://github.com/chhylp123/hifiasm)
 
-##### Developed tools in this work (Check [INSTALL](https://github.com/HeQSun/tetraDecoder/blob/main/INSTALL) for installation).
+##### Developed tools/scripts in this work (Check [INSTALL](https://github.com/HeQSun/tetraDecoder/blob/main/INSTALL) for installation).
+
+    fasta_length
+    fasta_name_selecter
+    ref_linkage_grouper
+    omnic_read_extracter
+    long_read_separator_v2
+    z_suppl_sample_10cultivars_checking_after_hic_binining.R
 
 ##### Besides,
 
