@@ -1,7 +1,7 @@
-<font color="red">Pipeline</font>
+<span style="color:red;">Pipeline</span>
 =
-#### <font color="red">This is the pipeline explaining how Hi-C based haplotyping in tetraploid (potato) works.</font>
- 
+#### This is the pipeline explaining how Hi-C based haplotyping in tetraploid (potato) works.
+
 #### Publicly available tools need to be installed. Note: zlib.h is required by some tools (for the purpose of zipping files), please install accordingly：
 
 * [bwa 0.7.17](https://github.com/lh3/bwa/releases)
