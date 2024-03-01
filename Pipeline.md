@@ -1,8 +1,8 @@
 Pipeline
 =
-##### This is the pipeline explaining how Hi-C based haplotyping in tetraploid (potato) works.
+#### This is the pipeline explaining how Hi-C based haplotyping in tetraploid (potato) works.
  
-##### Publicly available tools need to be installed. Note: zlib.h is required by some tools (for the purpose of zipping files), please install accordingly：
+#### Publicly available tools need to be installed. Note: zlib.h is required by some tools (for the purpose of zipping files), please install accordingly：
 
 * [bwa 0.7.17](https://github.com/lh3/bwa/releases)
 * [samtools 1.9](https://github.com/samtools/)
@@ -13,7 +13,7 @@ Pipeline
 * [gmap](http://research-pub.gene.com/gmap/src/gmap-gsnap-2012-07-20.v3.tar.gz)
 * [hifiasm 0.7](https://github.com/chhylp123/hifiasm)
 
-##### Developed tools/scripts in this work (Check [INSTALL](https://github.com/HeQSun/tetraDecoder/blob/main/INSTALL) for installation. Installation tested on linux distribution "Debian GNU/Linux 9 (stretch)" with x86_64 cpu architecture).
+#### Developed tools/scripts in this work (Check [INSTALL](https://github.com/HeQSun/tetraDecoder/blob/main/INSTALL) for installation. Installation tested on linux distribution "Debian GNU/Linux 9 (stretch)" with x86_64 cpu architecture).
 
     fasta_length               # calculate length of sequences in fasta format
     fasta_name_selecter        # select a subset of sequences with sequence name from a fasta file
@@ -22,9 +22,9 @@ Pipeline
     long_read_separator_v2     # given the groups of contigs, separate long reads into the groups
     z_suppl_sample_10cultivars_checking_after_hic_binining.R # check size of groupped contigs after running Hi-C based contig binning
 
-##### Besides, basic tools cat, grep, awk and sed should be installed in the system.
+#### Besides, basic tools cat, grep, awk and sed should be installed in the system.
 
-##### Step.0 Prepare data
+#### Step.0 Prepare data
 
 ##### step 0.1. prepare sequencing data of the focal genome. All data are from a tetraploid (potato cultivar) of interest, including PacBio HiFi reads, Hi-C reads from somatic tissues. In this example pipeline, suppose all raw sequencing data are collected in the path below (Illumina reads for coverage analysis of contig window markers are not given here, please refer to [Sun_and_Jiao_et_al_2021](https://nature.com/articles/s41588-022-01015-0) ).
 
