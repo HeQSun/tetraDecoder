@@ -69,7 +69,7 @@ Pipeline
 
 ##### click and download gff and cdna data of gene model for each lg [download: DM-lg-wise-cda-gff](https://mega.nz/folder/GscjQawR#QgwKEbbVjIdghp7r0xeWIg)
 
-##### Step 1. index preliminary assembly - the purged assembly (with corresponding contig size information - two tab-separated columns: contig_id	contig_size).
+#### Step 1. index preliminary assembly - the purged assembly (with corresponding contig size information - two tab-separated columns: contig_id	contig_size).
 
 ##### step 1.1. for the generation of the initial assembly.
 
@@ -98,13 +98,13 @@ Pipeline
     samtools flagstat -@ 24 ${sample}_hifiasm.bam
     samtools index -@ 24 ${sample}_hifiasm.bam
 
-##### step 2: prepare new window marker generation ([available here](https://github.com/HeQSun/tetraDecoder/tree/main/aux_intermediate_data))
+#### step 2: prepare new window marker generation ([available here](https://github.com/HeQSun/tetraDecoder/tree/main/aux_intermediate_data))
 
     marker_path=/your/work/directory/win_marker/
     cd ${marker_path}
     ls -l ${sample}_cnv_winsize10000_step10000_hq_merged_vs_hifi_markers_20221102_wsize500kb_final.txt
 
-##### step 3. grouping of contigs with a reference genome: here we use DM v6.1: ([download](http://solanaceae.plantbiology.msu.edu/dm_v6_1_download.shtml)) ([ref](https://academic.oup.com/gigascience/article/9/9/giaa100/5910251?searchresult=1#207670451))
+#### step 3. grouping of contigs with a reference genome: here we use DM v6.1: ([download](http://solanaceae.plantbiology.msu.edu/dm_v6_1_download.shtml)) ([ref](https://academic.oup.com/gigascience/article/9/9/giaa100/5910251?searchresult=1#207670451))
 
     wd=/your/work/directory/
     cd ${wd}
@@ -156,7 +156,7 @@ Pipeline
        cat dm_res_grouping_details_${sample}_*.txt | wc -l
     done
 
-##### step 4. Hi-C read alignment to ungrouped contigs, and extract to lg-groups
+#### step 4. Hi-C read alignment to ungrouped contigs, and extract to lg-groups
 
 ##### step 4.1. align hi-c reads to the ungrouped contigs
 
@@ -219,7 +219,7 @@ Pipeline
        done
     done
 
-##### step 5. Hi-C read alignment to each lg
+#### step 5. Hi-C read alignment to each lg
 
 ##### step 5.1. extract lg-wise assigned contigs (based on DM reference)
 
@@ -400,7 +400,7 @@ Pipeline
         done
     done
 
-##### step 6. hic_binning to separate contigs into haplotype-specific groups - CORE FUNCTION - TODO
+#### step 6. hic_binning to separate contigs into haplotype-specific groups - CORE FUNCTION - TODO
 
     sample="O"
     wd=/your/work/directory/a3_hic_alignment/
@@ -442,7 +442,7 @@ Pipeline
         done
     done
 
-##### step 7. check the binning result
+#### step 7. check the binning result
 
 ##### step 7.1. get group-contig sizes of chromosomes => s8_grouping_window_markers_refined_1st.txt
 
@@ -538,7 +538,7 @@ Pipeline
         awk '$5!=-1' final_res_${sample}_window_markers_12chrs.txt | awk '{s+=$3-$2+1} END {print s}'
     done
 
-##### step 8. extract HiFi reads according to marker grouping - group HiFi reads to 1-48 linkage groups according to marker phasing/grouping.
+#### step 8. extract HiFi reads according to marker grouping - group HiFi reads to 1-48 linkage groups according to marker phasing/grouping.
 
     sample="O"
     wd=/your/work/directory/a3_hic_alignment/
@@ -559,7 +559,7 @@ Pipeline
         gzip *.fa
     done
 
-##### step 9. LG-wise assembly
+#### step 9. LG-wise assembly
 
     wd=/your/work/directory/a3_hic_alignment/
     cd ${wd}
@@ -586,4 +586,4 @@ Pipeline
         done
     done
 
-##### step 10. contig scaffolding can be done with RagTag/Ragoo, ALLHiC, Juicer/Juicebox, which is not covered here.
+#### step 10. contig scaffolding can be done with RagTag/Ragoo, ALLHiC, Juicer/Juicebox, which is not covered here.
