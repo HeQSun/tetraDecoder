@@ -26,7 +26,7 @@ Pipeline
 
 ##### Step.0 Prepare data
 
-##### step 0.1. prepare sequencing data of the focal genome. All data are from a tetraploid (potato cultivar) of interest, including PacBio HiFi reads, Hi-C reads, Illumina reads from somatic tissues. In this example pipeline, suppose all raw sequencing data are collected in the path below.
+##### step 0.1. prepare sequencing data of the focal genome. All data are from a tetraploid (potato cultivar) of interest, including PacBio HiFi reads, Hi-C reads from somatic tissues. In this example pipeline, suppose all raw sequencing data are collected in the path below (Illumina reads for coverage analysis of contig window markers are not given here, please refer to [Sun_and_Jiao_et_al_2021](https://nature.com/articles/s41588-022-01015-0) ).
 
     read_path=/your/work/directory/reads/
     cd ${read_path}
@@ -80,7 +80,7 @@ Pipeline
     hifi=/path/to/s0_reads/4396_A_CCS.fastq
     hifiasm -t 10 -o otava ${hifi} >hifiasm.log
 
-    #(note, redundant contigs representing the same genomic regions were purged - please check supplementary information: section "Initial tetraploid genome assembly, polishing and purging" for details, in our previous work [Sun_and_Jiao_et_al_2021](https://nature.com/articles/s41588-022-01015-0). Here we provide the purged version of the initial assembly for the test [available here](https://mega.nz/folder/GktXEYCR#F3I8uTKvKO0Fu8VY2yc2WA) - click and save the fasta file .)
+##### #Note, redundant contigs representing the same genomic regions were purged - please check supplementary information: section "Initial tetraploid genome assembly, polishing and purging" for details, in our previous work [Sun_and_Jiao_et_al_2021](https://nature.com/articles/s41588-022-01015-0). Here we provide the purged version of the initial assembly for the test [available here](https://mega.nz/folder/GktXEYCR#F3I8uTKvKO0Fu8VY2yc2WA) - click and save the fasta file.
     
     mv HiFiasm_ref_6366long_ctgs_selected.fasta clipped4_${sample}_hifiasm.p_utg.gfa.fa
 
@@ -380,7 +380,7 @@ Pipeline
         done
     done
 
-##### step 5.8. use Allele.ctg.table to prune 1) signals that link alleles and 2) weak signals from BAM files: caution: ALLHiC_prune in the original version generatd Tb-level intermeidate files. Here is a developing version of prune used: https://github.com/sc-zhang/ALLHiC_components
+##### step 5.8. use Allele.ctg.table to prune 1) signals that link alleles and 2) weak signals from BAM files: caution: ALLHiC_prune in the original version generatd Tb-level intermeidate files. Here we used a developing version of prune: https://github.com/sc-zhang/ALLHiC_components
 
     wd=/your/work/directory/a3_hic_alignment/
     cd ${wd}
