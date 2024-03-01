@@ -15,18 +15,16 @@ Pipeline
 * [gmap](http://research-pub.gene.com/gmap/src/gmap-gsnap-2012-07-20.v3.tar.gz)
 * [hifiasm 0.7](https://github.com/chhylp123/hifiasm)
 
-##### Developed tools/scripts in this work (Check [INSTALL](https://github.com/HeQSun/tetraDecoder/blob/main/INSTALL) for installation).
+##### Developed tools/scripts in this work (Check [INSTALL](https://github.com/HeQSun/tetraDecoder/blob/main/INSTALL) for installation. Installation tested on x86_64 linux Ubuntu systems).
 
-    fasta_length
-    fasta_name_selecter
-    ref_linkage_grouper
-    omnic_read_extracter
-    long_read_separator_v2
-    z_suppl_sample_10cultivars_checking_after_hic_binining.R
+    fasta_length               # calculate length of sequences in fasta format
+    fasta_name_selecter        # select a subset of sequences with sequence name from a fasta file
+    ref_linkage_grouper        # based on alignment of contigs to a reference genomes, separate contigs into linkage groups
+    omnic_read_extracter       # given the groups of contigs, separate Hi-C read pairs into the groups
+    long_read_separator_v2     # given the groups of contigs, separate long reads into the groups
+    z_suppl_sample_10cultivars_checking_after_hic_binining.R # check size of groupped contigs after running Hi-C based contig binning
 
-##### Besides,
-
-##### Basic tools awk and sed etc should be installed.
+##### Besides, basic tools cat, grep, awk and sed should be installed in the system.
 
 ##### Step.0 Prepare data
 
@@ -71,19 +69,26 @@ Pipeline
     cat     DM_1-3_516_R44_potato_genome_assembly.v6.1.chrsizes | grep -v 'scaffold' | nl | sed 's/ //g' > DM_1-3_516_R44_potato_genome_assembly.v6.1_main12.chrsizes
     cut -f2 DM_1-3_516_R44_potato_genome_assembly.v6.1_main12.chrsizes                                   > DM_1-3_516_R44_potato_genome_assembly.v6.1_main12.chrids
 
-##### Step 1. index preliminary assembly - the purged assembly (with corresponding contig size information - two tab-separated columns: contig_id	contig_size) as below ([available here](https://mega.nz/folder/GktXEYCR#F3I8uTKvKO0Fu8VY2yc2WA))
+##### Step 1. index preliminary assembly - the purged assembly (with corresponding contig size information - two tab-separated columns: contig_id	contig_size).
 
-##### step 1.1
+##### step 1.1. for the generation of the initial assembly.
+
     asm_seq_path=/your/work/directory/assembly/
     cd ${asm_seq_path}
     sample="O"
+
+    hifi=/path/to/s0_reads/4396_A_CCS.fastq
+    hifiasm -t 10 -o otava ${hifi} >hifiasm.log
+
+    #(note, redundant contigs representing the same genomic regions were purged - please check supplementary information: section "Initial tetraploid genome assembly, polishing and purging" for details, in our previous work [Sun_and_Jiao_et_al_2021](https://nature.com/articles/s41588-022-01015-0). Here we provide the purged version of the initial assembly for the test [available here](https://mega.nz/folder/GktXEYCR#F3I8uTKvKO0Fu8VY2yc2WA) - click and save the fasta file .)
+    
     mv HiFiasm_ref_6366long_ctgs_selected.fasta clipped4_${sample}_hifiasm.p_utg.gfa.fa
 
     bwa index -a bwtsw clipped4_${sample}_hifiasm.p_utg.gfa.fa
     samtools faidx clipped4_${sample}_hifiasm.p_utg.gfa.fa
     bowtie2-build --threads 8 clipped4_${sample}_hifiasm.p_utg.gfa.fa clipped4_${sample}_hifiasm.p_utg.gfa.fa
 
-##### step 1.2 align HiFi reads to the contigs
+##### step 1.2. align HiFi reads to the contigs
 
     sample=O
     genome=clipped4_${sample}_hifiasm.p_utg.gfa.fa
