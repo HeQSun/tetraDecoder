@@ -15,11 +15,11 @@ Pipeline
 
 #### Developed tools/scripts in this work (Check [INSTALL](https://github.com/HeQSun/tetraDecoder/blob/main/INSTALL) for installation. Installation tested on linux distribution "Debian GNU/Linux 9 (stretch)" with x86_64 cpu architecture).
 
- * fasta_length               # calculate length of sequences in fasta format
- * fasta_name_selecter        # select a subset of sequences with sequence name from a fasta file
- * ref_linkage_grouper        # based on alignment of contigs to a reference genomes, separate contigs into linkage groups
- * omnic_read_extracter       # given the groups of contigs, separate Hi-C read pairs into the groups
- * long_read_separator_v2     # given the groups of contigs, separate long reads into the groups
+ * fasta_length---------------# calculate length of sequences in fasta format
+ * fasta_name_selecter--------# select a subset of sequences with sequence name from a fasta file
+ * ref_linkage_grouper--------# based on alignment of contigs to a reference genomes, separate contigs into linkage groups
+ * omnic_read_extracter-------# given the groups of contigs, separate Hi-C read pairs into the groups
+ * long_read_separator_v2-----# given the groups of contigs, separate long reads into the groups
  * z_suppl_sample_10cultivars_checking_after_hic_binining.R # check size of groupped contigs after running Hi-C based contig binning
 
 #### Besides, basic tools cat, grep, awk and sed should be installed in the system.
