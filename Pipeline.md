@@ -1,9 +1,8 @@
 Pipeline
 =
-##### This is the pipeline explaining how Hi-C based haplotyping in tetraploid (potato) works. Intermediate data (for running hic_binning) are provided [here](https://mega.nz/folder/OhkkyDDQ#cb5j-u8BxyCIfxQ-rBAkfQ), if you want to have a test run.
+##### This is the pipeline explaining how Hi-C based haplotyping in tetraploid (potato) works.
 
 ##### Note: zlib.h is required by some tools (for the purpose of zipping files), please install accordingly.
-
 ##### Publicly available tools need to be installed:
 
 * [bwa 0.7.17](https://github.com/lh3/bwa/releases)
