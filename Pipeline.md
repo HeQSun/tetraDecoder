@@ -32,6 +32,20 @@ Pipeline
 
 ##### Hi-C reads, with 3 raw subsets for 'Otava' (sample 'O'):
 
+    wget https://websafe.mpipz.mpg.de/d/JrwOY9d6Uy/V300052863_L01_read_1.fq.gz
+    wget https://websafe.mpipz.mpg.de/d/9513AARNBl/V300052863_L01_read_2.fq.gz
+    wget https://websafe.mpipz.mpg.de/d/PIFSZvOIAn/V300052863_L02_read_1.fq.gz
+    wget https://websafe.mpipz.mpg.de/d/W5vSHIk3nY/V300052863_L02_read_2.fq.gz
+    wget https://websafe.mpipz.mpg.de/d/6bQdEBxuFi/V300052863_L03_read_1.fq.gz
+    wget https://websafe.mpipz.mpg.de/d/UQqdpfGSNS/V300052863_L03_read_2.fq.gz
+
+    mv V300052863_L01_read_1.fq.gz O_L1_1.fq.gz
+    mv V300052863_L01_read_2.fq.gz O_L1_2.fq.gz
+    mv V300052863_L02_read_1.fq.gz O_L2_1.fq.gz
+    mv V300052863_L02_read_2.fq.gz O_L2_2.fq.gz
+    mv V300052863_L03_read_1.fq.gz O_L3_1.fq.gz
+    mv V300052863_L03_read_2.fq.gz O_L3_2.fq.gz
+
     ls -l O_L1_1.fq.gz
     ls -l O_L1_2.fq.gz
     ls -l O_L2_1.fq.gz
