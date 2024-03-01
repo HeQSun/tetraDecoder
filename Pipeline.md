@@ -31,7 +31,7 @@ Pipeline
     read_path=/your/work/directory/reads/
     cd ${read_path}
 
-##### PacBio HiFi [download](https://www.ncbi.nlm.nih.gov/sra/SRX11512735[accn])
+##### PacBio HiFi [available here](https://www.ncbi.nlm.nih.gov/sra/SRX11512735[accn])
 
     ls -l 4396_A_CCS.fastq
 
@@ -67,7 +67,7 @@ Pipeline
     cat     DM_1-3_516_R44_potato_genome_assembly.v6.1.chrsizes | grep -v 'scaffold' | nl | sed 's/ //g' > DM_1-3_516_R44_potato_genome_assembly.v6.1_main12.chrsizes
     cut -f2 DM_1-3_516_R44_potato_genome_assembly.v6.1_main12.chrsizes                                   > DM_1-3_516_R44_potato_genome_assembly.v6.1_main12.chrids
 
-##### click and download gff and cdna data of gene model for each lg [download: DM-lg-wise-cda-gff](https://mega.nz/folder/GscjQawR#QgwKEbbVjIdghp7r0xeWIg)
+##### save gff and cdna data of gene model for each lg [available here: DM-lg-wise-cda-gff](https://mega.nz/folder/GscjQawR#QgwKEbbVjIdghp7r0xeWIg)
 
 #### Step 1. index preliminary assembly - the purged assembly (with corresponding contig size information - two tab-separated columns: contig_id	contig_size).
 
@@ -104,7 +104,7 @@ Pipeline
     cd ${marker_path}
     ls -l ${sample}_cnv_winsize10000_step10000_hq_merged_vs_hifi_markers_20221102_wsize500kb_final.txt
 
-#### step 3. grouping of contigs with a reference genome: here we use DM v6.1: ([download](http://solanaceae.plantbiology.msu.edu/dm_v6_1_download.shtml)) ([ref](https://academic.oup.com/gigascience/article/9/9/giaa100/5910251?searchresult=1#207670451))
+#### step 3. grouping of contigs with a reference genome: here we use DM v6.1: ([available here](http://solanaceae.plantbiology.msu.edu/dm_v6_1_download.shtml)) ([ref](https://academic.oup.com/gigascience/article/9/9/giaa100/5910251?searchresult=1#207670451))
 
     wd=/your/work/directory/
     cd ${wd}
