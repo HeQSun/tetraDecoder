@@ -1,9 +1,8 @@
 Pipeline
 =
 ##### This is the pipeline explaining how Hi-C based haplotyping in tetraploid (potato) works.
-
-##### Note: zlib.h is required by some tools (for the purpose of zipping files), please install accordingly.
-##### Publicly available tools need to be installed:
+ 
+##### Publicly available tools need to be installed. Note: zlib.h is required by some tools (for the purpose of zipping files), please install accordingly：
 
 * [bwa 0.7.17](https://github.com/lh3/bwa/releases)
 * [samtools 1.9](https://github.com/samtools/)
