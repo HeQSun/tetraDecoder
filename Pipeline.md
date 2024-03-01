@@ -68,7 +68,7 @@ Pipeline
     cat     DM_1-3_516_R44_potato_genome_assembly.v6.1.chrsizes | grep -v 'scaffold' | nl | sed 's/ //g' > DM_1-3_516_R44_potato_genome_assembly.v6.1_main12.chrsizes
     cut -f2 DM_1-3_516_R44_potato_genome_assembly.v6.1_main12.chrsizes                                   > DM_1-3_516_R44_potato_genome_assembly.v6.1_main12.chrids
 
-    # click and download gff and cdna data of gene model for each lg: https://mega.nz/folder/GscjQawR#QgwKEbbVjIdghp7r0xeWIg
+##### click and download gff and cdna data of gene model for each lg [download: DM-lg-wise-cda-gff](https://mega.nz/folder/GscjQawR#QgwKEbbVjIdghp7r0xeWIg)
 
 ##### Step 1. index preliminary assembly - the purged assembly (with corresponding contig size information - two tab-separated columns: contig_id	contig_size).
 
