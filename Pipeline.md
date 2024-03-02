@@ -19,7 +19,7 @@ This is the pipeline explaining haplotyping in a tetraploid genome using Hi-C an
  * ref_linkage_grouper---------# based on alignment of contigs to a reference genomes, separate contigs into linkage groups
  * omnic_read_extracter-------# given the groups of contigs, separate Hi-C read pairs into the groups
  * long_read_separator_v2-----# given the groups of contigs, separate long reads into the groups
- * hic_binning----------------# this is the core of this pipeline, which separates contigs into haplotypes.
+ * hic_binning------------------# this is the core of this pipeline, which separates contigs into haplotypes.
  * z_suppl_sample_10cultivars_checking_after_hic_binining.R # check size of groupped contigs after running Hi-C based contig binning
 
 #### Besides, basic tools cat, grep, awk and sed should be installed in the system.
