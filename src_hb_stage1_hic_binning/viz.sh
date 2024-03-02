@@ -1,4 +1,4 @@
-cd /biodata/dep_mercier/grp_schneeberger/projects/methods/src_shq/z_GameteBinning_potato_multivar/src_hb_stage1_hic_binning/
+cd /path/to/src_hb_stage1_hic_binning/
 
 cd s6_pruned_bam_raw_tig_marker_cross_link_count/
 
