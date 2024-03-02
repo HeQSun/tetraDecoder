@@ -1,4 +1,4 @@
-This is the pipeline explaining haplotyping in a tetraploid genome (potato) using Hi-C and long read sequencing.
+This is the pipeline explaining haplotyping in a tetraploid genome using Hi-C and long read sequencing.
 =
 
 #### Publicly available tools need to be installed. Note: zlib.h is required by some tools (for the purpose of zipping files), please install accordingly：
