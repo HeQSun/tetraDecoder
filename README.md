@@ -1,6 +1,6 @@
 tetraDecoder
 =
-Here we introduce the pipeline for achieving haplotype-resolved, chromosome-level genome assembly of tetraploids using long read sequencing and HiC sequencing. This is to support the analysis in [Sun_and_Tusso_et_al_2024].
+Here we introduce the pipeline for achieving haplotype-resolved, chromosome-level genome assembly of tetraploids using long read sequencing and HiC sequencing. 
 
 Pipeline of assembly
 =
