@@ -508,7 +508,7 @@ This is the pipeline explaining haplotyping in a tetraploid genome using Hi-C an
 		# sort by intra-group hic / inter-group hic - larger better
     #		    tmp_x <- tmp_x[order(tmp_x$V15, decreasing=TRUE), ]
 
-    # you may need to update path in the R script
+    # you need to update path in the R script
     Rscript /path/to/tetraDecoder/src_hb_stage1_hic_binning/aux/z_suppl_sample_10cultivars_checking_after_hic_binining.R
 
 ##### step 7.3. merge phased markers within different chrs as a genome-level marker set    
