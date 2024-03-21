@@ -9,4 +9,4 @@ Befrore running the pipeline, install necessary customized tools, check [INSTALL
 
 To start the process, check the [pipeline](https://github.com/HeQSun/tetraDecoder/blob/main/Pipeline.md)
 
-Note, in the pipeline, there are tools like hifiasm, bowtie2 etc required, which are all publicly available. Please install following their instructions.
+Note, tools required are listed in the beginning of the pipeline. Please install following their instructions.
