@@ -123,8 +123,8 @@ This is the pipeline explaining haplotyping in a tetraploid genome using Hi-C an
         dm_ref=/your/work/directory/ref_dm6p1/DM_1-3_516_R44_potato_genome_assembly.v6.1.fa
         assembly=/your/work/directory/assembly/clipped4_${sample}_hifiasm.p_utg.gfa.fa
         thread=4
-	# paf format: for grouping
-	minimap2 -cx asm20 -t ${thread} ${dm_ref} ${assembly} > ${sample}_against_dm.paf
+        # paf format: for grouping
+        minimap2 -cx asm20 -t ${thread} ${dm_ref} ${assembly} > ${sample}_against_dm.paf
         # bam format: for later allelic check
         minimap2 -ax asm20 -t ${thread} ${dm_ref} ${assembly} | samtools view -@ ${thread} -bS - | samtools sort -@ ${thread} -o ${sample}_against_dm.bam - 
         cd ${wd}
