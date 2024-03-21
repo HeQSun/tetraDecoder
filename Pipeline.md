@@ -266,7 +266,7 @@ This is the pipeline explaining haplotyping in a tetraploid genome using Hi-C an
         done
     done
 
-##### step 5.3. bwa align to initial assembly of 48 chrs  --- to continue!!!!!!!!!
+##### step 5.3. bwa align to initial assembly of 48 chrs
 
     wd=/your/work/directory/a3_hic_alignment/
     cd ${wd}
