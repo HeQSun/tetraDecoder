@@ -37,12 +37,13 @@ This is the pipeline explaining haplotyping in a tetraploid genome using Hi-C an
 
 ##### Hi-C reads, with 3 raw subsets for 'Otava' (sample 'O'):
 
-    wget https://websafe.mpipz.mpg.de/d/JrwOY9d6Uy/V300052863_L01_read_1.fq.gz
-    wget https://websafe.mpipz.mpg.de/d/9513AARNBl/V300052863_L01_read_2.fq.gz
-    wget https://websafe.mpipz.mpg.de/d/PIFSZvOIAn/V300052863_L02_read_1.fq.gz
-    wget https://websafe.mpipz.mpg.de/d/W5vSHIk3nY/V300052863_L02_read_2.fq.gz
-    wget https://websafe.mpipz.mpg.de/d/6bQdEBxuFi/V300052863_L03_read_1.fq.gz
-    wget https://websafe.mpipz.mpg.de/d/UQqdpfGSNS/V300052863_L03_read_2.fq.gz
+    wget https://websafe.mpipz.mpg.de/d/0r5CGxtrn3/V300052863_L01_read_1.fq.gz
+    wget https://websafe.mpipz.mpg.de/d/7BPV2CMwfg/V300052863_L01_read_2.fq.gz
+    wget https://websafe.mpipz.mpg.de/d/acCNzIVNxS/V300052863_L02_read_1.fq.gz
+    wget https://websafe.mpipz.mpg.de/d/iRwZYPqxRC/V300052863_L02_read_2.fq.gz
+    wget https://websafe.mpipz.mpg.de/d/AwAq1VeuXi/V300052863_L03_read_1.fq.gz
+    wget https://websafe.mpipz.mpg.de/d/Ze1rcfPZQF/V300052863_L03_read_2.fq.gz
+    wget https://websafe.mpipz.mpg.de/d/GcadeWRrvD/md5.txt # check md5 by yourself
 
     mv V300052863_L01_read_1.fq.gz O_L1_1.fq.gz
     mv V300052863_L01_read_2.fq.gz O_L1_2.fq.gz
@@ -62,6 +63,8 @@ This is the pipeline explaining haplotyping in a tetraploid genome using Hi-C an
 
     ref_seq_path=/your/work/directory/ref_dm6p1/
     cd ${ref_seq_path}
+    wget http://spuddb.uga.edu/data/DM_1-3_516_R44_potato_genome_assembly.v6.1.fa.gz
+    gunzip DM_1-3_516_R44_potato_genome_assembly.v6.1.fa.gz
     dm_ref="DM_1-3_516_R44_potato_genome_assembly.v6.1.fa"
     fasta_length ${dm_ref} | grep '>' | sed 's/>//g' > DM_1-3_516_R44_potato_genome_assembly.v6.1.chrsizes
     cat     DM_1-3_516_R44_potato_genome_assembly.v6.1.chrsizes | grep -v 'scaffold' | nl | sed 's/ //g' > DM_1-3_516_R44_potato_genome_assembly.v6.1_main12.chrsizes
@@ -120,7 +123,10 @@ This is the pipeline explaining haplotyping in a tetraploid genome using Hi-C an
         dm_ref=/your/work/directory/ref_dm6p1/DM_1-3_516_R44_potato_genome_assembly.v6.1.fa
         assembly=/your/work/directory/assembly/clipped4_${sample}_hifiasm.p_utg.gfa.fa
         thread=4
-        minimap2 -ax asm20 -t ${thread} ${dm_ref} ${assembly} | samtools view -@ ${thread} -bS - | samtools sort -@ ${thread} -o ${sample}_against_dm.bam -
+	# paf format: for grouping
+	minimap2 -cx asm20 -t ${thread} ${dm_ref} ${assembly} > ${sample}_against_dm.paf
+        # bam format: for later allelic check
+        minimap2 -ax asm20 -t ${thread} ${dm_ref} ${assembly} | samtools view -@ ${thread} -bS - | samtools sort -@ ${thread} -o ${sample}_against_dm.bam - 
         cd ${wd}
     done
 
@@ -400,7 +406,7 @@ This is the pipeline explaining haplotyping in a tetraploid genome using Hi-C an
         done
     done
 
-#### step 6. hic_binning to separate contigs into haplotype-specific groups - CORE FUNCTION - TODO
+#### step 6. hic_binning to separate contigs into haplotype-specific groups - CORE FUNCTION
 
     sample="O"
     wd=/your/work/directory/a3_hic_alignment/
@@ -519,11 +525,11 @@ This is the pipeline explaining haplotyping in a tetraploid genome using Hi-C an
         cd bwa_align
         cd lg_wise_contigs_read_align
         chri=0
-
         >final_res_${sample}_window_markers_12chrs.txt
-
         while read lg min_hic_contact min_hic_contact_i min_hapctg_size max_allelic_ratio hs1 hs2 hs3 hs4 hic_r size_sd; do
-            phased_win_marker=./hic_binning_${lg}/s6_${lg}_${min_hic_contact}_${min_hic_contact_i}_${min_hapctg_size}_${max_allelic_ratio}_raw_tig_marker_cross_link_count/s8_grouping_window_markers_refined_1st.txt
+	 
+      
+   phased_win_marker=./hic_binning_${lg}/s6_${lg}_${min_hic_contact}_${min_hic_contact_i}_${min_hapctg_size}_${max_allelic_ratio}_raw_tig_marker_cross_link_count/s8_grouping_window_markers_refined_1st.txt
             chri=$((chri+1))
             awk '$5==-1' ${phased_win_marker} > tmp_non_grouped_markers.txt
             awk '$5!=-1' ${phased_win_marker} > tmp_all_grouped_markers.txt
