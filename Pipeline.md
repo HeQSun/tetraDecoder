@@ -527,9 +527,7 @@ This is the pipeline explaining haplotyping in a tetraploid genome using Hi-C an
         chri=0
         >final_res_${sample}_window_markers_12chrs.txt
         while read lg min_hic_contact min_hic_contact_i min_hapctg_size max_allelic_ratio hs1 hs2 hs3 hs4 hic_r size_sd; do
-	 
-      
-   phased_win_marker=./hic_binning_${lg}/s6_${lg}_${min_hic_contact}_${min_hic_contact_i}_${min_hapctg_size}_${max_allelic_ratio}_raw_tig_marker_cross_link_count/s8_grouping_window_markers_refined_1st.txt
+            phased_win_marker=./hic_binning_${lg}/s6_${lg}_${min_hic_contact}_${min_hic_contact_i}_${min_hapctg_size}_${max_allelic_ratio}_raw_tig_marker_cross_link_count/s8_grouping_window_markers_refined_1st.txt
             chri=$((chri+1))
             awk '$5==-1' ${phased_win_marker} > tmp_non_grouped_markers.txt
             awk '$5!=-1' ${phased_win_marker} > tmp_all_grouped_markers.txt
