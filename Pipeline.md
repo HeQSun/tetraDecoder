@@ -101,7 +101,7 @@ This is the pipeline explaining haplotyping in a tetraploid genome using Hi-C an
     samtools flagstat -@ 24 ${sample}_hifiasm.bam
     samtools index -@ 24 ${sample}_hifiasm.bam
 
-#### step 2: prepare new window marker ([available here](https://github.com/HeQSun/tetraDecoder/tree/main/aux_intermediate_data))
+#### step 2: prepare new window marker ([available here](https://github.com/HeQSun/tetraDecoder/tree/main/aux_intermediate_data)) : for generating this file please check [Step 4-6 here](https://github.com/schneebergerlab/GameteBinning_tetraploid/blob/main/Pipeline.md)
 
     marker_path=/your/work/directory/win_marker/
     cd ${marker_path}
