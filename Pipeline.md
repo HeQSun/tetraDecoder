@@ -72,7 +72,7 @@ This is the pipeline explaining haplotyping in a tetraploid genome using Hi-C an
 
 ##### save gff and cdna data of gene model for each lg [available here: DM-lg-wise-cda-gff](https://mega.nz/folder/GscjQawR#QgwKEbbVjIdghp7r0xeWIg)
 
-#### Step 1. index preliminary assembly - the purged assembly (with corresponding contig size information - two tab-separated columns: contig_id	contig_size).
+#### Step 1. create and index preliminary assembly, and align HiFi reads to the assembly
 
 ##### step 1.1. for the generation of the initial assembly.
 
@@ -101,19 +101,19 @@ This is the pipeline explaining haplotyping in a tetraploid genome using Hi-C an
     samtools flagstat -@ 24 ${sample}_hifiasm.bam
     samtools index -@ 24 ${sample}_hifiasm.bam
 
-#### step 2: prepare new window marker generation ([available here](https://github.com/HeQSun/tetraDecoder/tree/main/aux_intermediate_data))
+#### step 2: prepare new window marker ([available here](https://github.com/HeQSun/tetraDecoder/tree/main/aux_intermediate_data))
 
     marker_path=/your/work/directory/win_marker/
     cd ${marker_path}
     ls -l ${sample}_cnv_winsize10000_step10000_hq_merged_vs_hifi_markers_20221102_wsize500kb_final.txt
 
-#### step 3. grouping of contigs with a reference genome: here we use DM v6.1: ([available here](http://solanaceae.plantbiology.msu.edu/dm_v6_1_download.shtml)) ([ref](https://academic.oup.com/gigascience/article/9/9/giaa100/5910251?searchresult=1#207670451))
+#### step 3. group contigs with a reference genome: here we use DM v6.1: ([available here](http://solanaceae.plantbiology.msu.edu/dm_v6_1_download.shtml)) ([ref](https://academic.oup.com/gigascience/article/9/9/giaa100/5910251?searchresult=1#207670451))
 
     wd=/your/work/directory/
     cd ${wd}
     mkdir a4_alignment_based_linkage_grouping
 
-##### step 3.1. alignment using DM as reference
+##### step 3.1. align assembled contigs to DM genonme
 
     for sample in O; do
         group_lg_path=/your/work/directory/a4_alignment_based_linkage_grouping/
