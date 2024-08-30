@@ -10,3 +10,5 @@ Befrore running the pipeline, install necessary customized tools, check [INSTALL
 To start the process, check the [pipeline](https://github.com/HeQSun/tetraDecoder/blob/main/Pipeline.md)
 
 Note, tools required are listed in the beginning of the pipeline. Please install following their instructions.
+
+Here is also the pipeline for diversity and introgression analysis: Diversity_Introgression_Selection_Analyses.md
