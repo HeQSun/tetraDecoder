@@ -591,3 +591,5 @@ This is the pipeline explaining haplotyping in a tetraploid genome using Hi-C an
     done
 
 #### step 10. contig scaffolding can be done with RagTag/Ragoo, ALLHiC, Juicer/Juicebox, which is not covered here.
+
+#### Additional info: regarding haplotype-graph analysis, these are used: https://github.com/schneebergerlab/pantohap/commit/50289fd7a71f28fa4c73a490bf5237694de2ca65 and https://github.com/schneebergerlab/haplotype_threading, please check the corresponding repositories for details.
