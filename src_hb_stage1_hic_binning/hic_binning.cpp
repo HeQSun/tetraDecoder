@@ -2297,7 +2297,10 @@ bool get_clusters(map<string, int> vertex,
             }
         }
         ofp.close();
-        return false; 
+    }
+	if( (*cluster_edge).size() < N_cluster )
+    {
+      return false; // updated 20260626: if the number of clusters is less than expected, no way to continue; if larger, there is merge step.
     }
     //
     return true;
