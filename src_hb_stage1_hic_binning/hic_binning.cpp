@@ -2274,7 +2274,7 @@ bool get_clusters(map<string, int> vertex,
     }    
     //
     cout << "       : " << (*cluster_edge).size() << " clusters found. " << endl;
-    int N_cluster = 4;    
+    // int N_cluster = 4;    // 20260627 this is a global parameter.
     if((*cluster_edge).size() != N_cluster)
     {
         string hic_sum_file = tmpfolder + "/s8_grouping_window_markers_refined_1st_group_hic_stats.txt\0"; 
